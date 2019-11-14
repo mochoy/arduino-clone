@@ -573,6 +573,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <busses>
 </busses>
 <nets>
+<net name="PP5V0_AR" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="VCC@6"/>
+<wire x1="167.64" y1="152.4" x2="165.1" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U101" gate="U$1" pin="VCC@4"/>
+<wire x1="165.1" y1="152.4" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="154.94" x2="167.64" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U101" gate="U$1" pin="AVCC"/>
+<wire x1="167.64" y1="157.48" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="157.48" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
+<junction x="165.1" y="154.94"/>
+<wire x1="165.1" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
+<junction x="165.1" y="157.48"/>
+<label x="134.62" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
