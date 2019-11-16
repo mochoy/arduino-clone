@@ -6851,6 +6851,8 @@ type 0309, grid 2.5 mm</description>
 <part name="GND2" library="supply" deviceset="GND" device=""/>
 <part name="GND4" library="supply" deviceset="GND" device=""/>
 <part name="R1" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
+<part name="GND5" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6882,6 +6884,10 @@ type 0309, grid 2.5 mm</description>
 <instance part="R1" gate="G$1" x="149.86" y="175.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.67" y="176.7586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="153.67" y="174.498" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="142.24" y="142.24"/>
+<instance part="GND5" gate="1" x="142.24" y="132.08" smashed="yes">
+<attribute name="VALUE" x="140.0175" y="129.54" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6954,6 +6960,11 @@ type 0309, grid 2.5 mm</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="68.58" y1="182.88" x2="68.58" y2="180.34" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="134.62" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -6962,6 +6973,15 @@ type 0309, grid 2.5 mm</description>
 <pinref part="U101" gate="U$1" pin="PC6(/RESET)"/>
 <wire x1="149.86" y1="162.56" x2="167.64" y2="162.56" width="0.1524" layer="91"/>
 <label x="157.48" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="U101_AREF" class="0">
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="144.78" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U101" gate="U$1" pin="AREF"/>
+<wire x1="142.24" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
+<label x="152.4" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
