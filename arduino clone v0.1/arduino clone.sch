@@ -7481,7 +7481,7 @@ existing UART devices to USB interface. &lt;/p&gt;
 <part name="GND5" library="supply" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.2MM-TALL" value="RESET_BTN"/>
 <part name="GND6" library="supply" deviceset="GND" device=""/>
-<part name="U$1" library="my-eagle-lib" deviceset="CH340G" device=""/>
+<part name="U201" library="my-eagle-lib" deviceset="CH340G" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7635,11 +7635,19 @@ existing UART devices to USB interface. &lt;/p&gt;
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="U$1" gate="G$1" x="185.42" y="124.46"/>
+<instance part="U201" gate="G$1" x="185.42" y="124.46"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="PP5V0_CH340G" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="VCC"/>
+<wire x1="182.88" y1="185.42" x2="182.88" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="218.44" x2="109.22" y2="218.44" width="0.1524" layer="91"/>
+<label x="109.22" y="218.44" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
