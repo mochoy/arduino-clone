@@ -432,118 +432,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="Serial-Basic">
-<packages>
-<package name="SO016">
-<wire x1="4.8768" y1="1.9463" x2="-4.8768" y2="1.9463" width="0.2032" layer="21"/>
-<wire x1="4.9768" y1="-1.9463" x2="5.2578" y2="-1.5653" width="0.2032" layer="21" curve="90"/>
-<wire x1="-5.2578" y1="1.4653" x2="-4.8768" y2="1.9463" width="0.2032" layer="21" curve="-90.023829"/>
-<wire x1="4.8768" y1="1.9463" x2="5.2578" y2="1.5653" width="0.2032" layer="21" curve="-90.030084"/>
-<wire x1="-5.2578" y1="-1.6653" x2="-4.8768" y2="-1.9463" width="0.2032" layer="21" curve="90.060185"/>
-<wire x1="-4.8768" y1="-1.9463" x2="4.9768" y2="-1.9463" width="0.2032" layer="21"/>
-<wire x1="5.2578" y1="-1.5653" x2="5.2578" y2="1.5653" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="0.6096" x2="-5.207" y2="-0.6604" width="0.2032" layer="21" curve="-180"/>
-<wire x1="-5.2578" y1="1.4526" x2="-5.2578" y2="0.6096" width="0.2032" layer="21"/>
-<wire x1="-5.2578" y1="-1.6653" x2="-5.2578" y2="-0.6604" width="0.2032" layer="21"/>
-<rectangle x1="-4.699" y1="-3.302" x2="-4.191" y2="-2.2733" layer="51"/>
-<rectangle x1="-3.429" y1="-3.302" x2="-2.921" y2="-2.2733" layer="51"/>
-<rectangle x1="-2.159" y1="-3.302" x2="-1.651" y2="-2.2733" layer="51"/>
-<rectangle x1="-0.889" y1="-3.302" x2="-0.381" y2="-2.2733" layer="51"/>
-<rectangle x1="0.381" y1="-3.302" x2="0.889" y2="-2.2733" layer="51"/>
-<rectangle x1="1.651" y1="-3.302" x2="2.159" y2="-2.2733" layer="51"/>
-<rectangle x1="2.921" y1="-3.302" x2="3.429" y2="-2.2733" layer="51"/>
-<rectangle x1="4.191" y1="-3.302" x2="4.699" y2="-2.2733" layer="51"/>
-<rectangle x1="-4.699" y1="2.286" x2="-4.191" y2="3.3655" layer="51"/>
-<rectangle x1="-3.429" y1="2.286" x2="-2.921" y2="3.302" layer="51"/>
-<rectangle x1="-2.159" y1="2.286" x2="-1.651" y2="3.302" layer="51"/>
-<rectangle x1="-0.889" y1="2.286" x2="-0.381" y2="3.302" layer="51"/>
-<rectangle x1="0.381" y1="2.286" x2="0.889" y2="3.302" layer="51"/>
-<rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
-<rectangle x1="2.921" y1="2.286" x2="3.429" y2="3.302" layer="51"/>
-<rectangle x1="4.191" y1="2.286" x2="4.699" y2="3.302" layer="51"/>
-<smd name="1" x="-4.445" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="2" x="-3.175" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="3" x="-1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="4" x="-0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="5" x="0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="6" x="1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="7" x="3.175" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="8" x="4.445" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="9" x="4.445" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="10" x="3.175" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="11" x="1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="12" x="0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="13" x="-0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="14" x="-1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="15" x="-3.175" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<smd name="16" x="-4.445" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<text x="-3.81" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-1.27" size="0.6096" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CH340G">
-<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
-<pin name="!CTS" x="10.16" y="-10.16" length="short" rot="R180"/>
-<pin name="!DCD" x="10.16" y="-2.54" length="short" rot="R180"/>
-<pin name="!DSR" x="10.16" y="-7.62" length="short" rot="R180"/>
-<pin name="!DTR" x="10.16" y="0" length="short" rot="R180"/>
-<pin name="!RI" x="10.16" y="-5.08" length="short" rot="R180"/>
-<pin name="!RTS" x="10.16" y="2.54" length="short" rot="R180"/>
-<pin name="GND" x="-10.16" y="7.62" length="short"/>
-<pin name="R232" x="10.16" y="5.08" length="short" rot="R180"/>
-<pin name="RXD" x="-10.16" y="2.54" length="short"/>
-<pin name="TXD" x="-10.16" y="5.08" length="short"/>
-<pin name="UD+" x="-10.16" y="-2.54" length="short"/>
-<pin name="UD-" x="-10.16" y="-5.08" length="short"/>
-<pin name="V3" x="-10.16" y="0" length="short"/>
-<pin name="VCC" x="10.16" y="7.62" length="short" rot="R180"/>
-<pin name="XI" x="-10.16" y="-7.62" length="short"/>
-<pin name="XO" x="-10.16" y="-10.16" length="short"/>
-<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CH340G" prefix="U">
-<description>A simple USB 2.0 to Serial IC.</description>
-<gates>
-<gate name="U1" symbol="CH340G" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="SO016">
-<connects>
-<connect gate="U1" pin="!CTS" pad="9"/>
-<connect gate="U1" pin="!DCD" pad="12"/>
-<connect gate="U1" pin="!DSR" pad="10"/>
-<connect gate="U1" pin="!DTR" pad="13"/>
-<connect gate="U1" pin="!RI" pad="11"/>
-<connect gate="U1" pin="!RTS" pad="14"/>
-<connect gate="U1" pin="GND" pad="1"/>
-<connect gate="U1" pin="R232" pad="15"/>
-<connect gate="U1" pin="RXD" pad="3"/>
-<connect gate="U1" pin="TXD" pad="2"/>
-<connect gate="U1" pin="UD+" pad="5"/>
-<connect gate="U1" pin="UD-" pad="6"/>
-<connect gate="U1" pin="V3" pad="4"/>
-<connect gate="U1" pin="VCC" pad="16"/>
-<connect gate="U1" pin="XI" pad="7"/>
-<connect gate="U1" pin="XO" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-13498" constant="no"/>
-<attribute name="VALUE" value="CH340G" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -7419,6 +7307,155 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="my-eagle-lib">
+<packages>
+<package name="SOIC16">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
+16-Pin (150-Mil) SOIC&lt;br&gt;
+Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
+<wire x1="4.79" y1="-1.795" x2="-4.79" y2="-1.795" width="0.2032" layer="51"/>
+<wire x1="-4.79" y1="-1.795" x2="-4.79" y2="1.795" width="0.2032" layer="51"/>
+<wire x1="-4.79" y1="1.795" x2="4.79" y2="1.795" width="0.2032" layer="51"/>
+<wire x1="4.79" y1="1.795" x2="4.79" y2="-1.795" width="0.2032" layer="51"/>
+<circle x="-4.05" y="-0.995" radius="0.3256" width="0.2032" layer="21"/>
+<smd name="2" x="-3.175" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="13" x="-0.635" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="1" x="-4.445" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="3" x="-1.905" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="4" x="-0.635" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="14" x="-1.905" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="12" x="0.635" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="11" x="1.905" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="6" x="1.905" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="9" x="4.445" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="5" x="0.635" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="7" x="3.175" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="10" x="3.175" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="8" x="4.445" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="15" x="-3.175" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="16" x="-4.445" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<rectangle x1="-4.6901" y1="-2.921" x2="-4.1999" y2="-1.8951" layer="51"/>
+<rectangle x1="-3.4201" y1="-2.921" x2="-2.9299" y2="-1.8951" layer="51"/>
+<rectangle x1="-2.1501" y1="-2.921" x2="-1.6599" y2="-1.8951" layer="51"/>
+<rectangle x1="-0.8801" y1="-2.921" x2="-0.3899" y2="-1.8951" layer="51"/>
+<rectangle x1="0.3899" y1="-2.921" x2="0.8801" y2="-1.8951" layer="51"/>
+<rectangle x1="1.6599" y1="-2.921" x2="2.1501" y2="-1.8951" layer="51"/>
+<rectangle x1="2.9299" y1="-2.921" x2="3.4201" y2="-1.8951" layer="51"/>
+<rectangle x1="4.1999" y1="-2.921" x2="4.6901" y2="-1.8951" layer="51"/>
+<rectangle x1="4.1999" y1="1.8951" x2="4.6901" y2="2.921" layer="51"/>
+<rectangle x1="2.9299" y1="1.8951" x2="3.4201" y2="2.921" layer="51"/>
+<rectangle x1="1.6599" y1="1.8951" x2="2.1501" y2="2.921" layer="51"/>
+<rectangle x1="0.3899" y1="1.8951" x2="0.8801" y2="2.921" layer="51"/>
+<rectangle x1="-0.8801" y1="1.8951" x2="-0.3899" y2="2.921" layer="51"/>
+<rectangle x1="-2.1501" y1="1.8951" x2="-1.6599" y2="2.921" layer="51"/>
+<rectangle x1="-3.4201" y1="1.8951" x2="-2.9299" y2="2.921" layer="51"/>
+<rectangle x1="-4.6901" y1="1.8951" x2="-4.1999" y2="2.921" layer="51"/>
+<text x="-5.08" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.35" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CH340G">
+<pin name="VCC" x="-2.54" y="60.96" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-58.42" direction="pwr" rot="R90"/>
+<pin name="TXD" x="33.02" y="10.16" direction="out" rot="R180"/>
+<pin name="RXD" x="33.02" y="5.08" direction="out" rot="R180"/>
+<pin name="V3" x="2.54" y="60.96" direction="pwr" rot="R270"/>
+<pin name="D+" x="-33.02" y="10.16"/>
+<pin name="D-" x="-33.02" y="5.08"/>
+<pin name="XI" x="-33.02" y="-10.16"/>
+<pin name="XO" x="-33.02" y="-15.24"/>
+<pin name="R232" x="-30.48" y="-30.48" length="middle" direction="in"/>
+<pin name="CTS" x="33.02" y="-5.08" direction="in" rot="R180"/>
+<pin name="DSR" x="33.02" y="-10.16" direction="in" rot="R180"/>
+<pin name="RI" x="33.02" y="-15.24" direction="in" rot="R180"/>
+<pin name="DCD" x="33.02" y="-20.32" direction="in" rot="R180"/>
+<pin name="DTR" x="33.02" y="-25.4" direction="out" rot="R180"/>
+<pin name="RTS" x="33.02" y="-30.48" direction="out" rot="R180"/>
+<text x="0" y="40.64" size="1.778" layer="94" align="bottom-center">POWER</text>
+<text x="0" y="30.48" size="2.54" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="25.4" size="2.54" layer="96" align="bottom-center">&gt;VALUE</text>
+<wire x1="-25.4" y1="53.34" x2="25.4" y2="53.34" width="0.254" layer="94"/>
+<wire x1="25.4" y1="53.34" x2="25.4" y2="38.1" width="0.254" layer="94"/>
+<wire x1="25.4" y1="38.1" x2="-25.4" y2="38.1" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="38.1" x2="-25.4" y2="53.34" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="38.1" x2="-25.4" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="15.24" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="0" x2="-25.4" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-5.08" x2="-25.4" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-20.32" x2="-25.4" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-35.56" x2="-25.4" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-50.8" x2="-22.86" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-50.8" x2="25.4" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-50.8" x2="25.4" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-43.18" x2="25.4" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-35.56" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="15.24" width="0.254" layer="94"/>
+<wire x1="25.4" y1="15.24" x2="25.4" y2="38.1" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-35.56" x2="0" y2="-35.56" width="0.254" layer="94"/>
+<text x="-15.24" y="7.62" size="1.778" layer="94" align="center-left">USB</text>
+<wire x1="0" y1="-35.56" x2="25.4" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="-2.54" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-20.32" x2="-25.4" y2="-20.32" width="0.254" layer="94"/>
+<text x="-15.24" y="-12.7" size="1.778" layer="94" align="center-left">CRYSTAL</text>
+<wire x1="0" y1="15.24" x2="25.4" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
+<text x="15.24" y="7.62" size="1.778" layer="94" align="center-right">UART
+RX/TX</text>
+<text x="0" y="20.32" size="2.54" layer="97" align="bottom-center">CH340G</text>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="0" y2="-35.56" width="0.254" layer="94"/>
+<text x="15.24" y="-17.78" size="1.778" layer="94" align="center-right">UART
+FLOW
+CONTROL</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CH340G">
+<description>&lt;p&gt;CH340 is a series of USB bus adapters, that provides serial, parallel or IrDA interfaces over
+the USB bus (note: CH340G supports serial interface only). The CH340G integrate circuit
+provides common MODEM signals to allow adding a UART to a computer, or converting
+existing UART devices to USB interface. &lt;/p&gt;
+
+&lt;p&gt;This is a foreign component and most datasheets are in another language. Here is the best datasheet I could find.&lt;/p&gt;
+&lt;p&gt;Datasheet: &lt;a href="http://www.handsontec.com/dataspecs/ch340g.pdf"&gt;http://www.handsontec.com/dataspecs/ch340g.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sparkfun also has datasheets on the CH340 family, but not of the CH340G. It may still prove to be useful: &lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF"&gt;https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CH340G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC16">
+<connects>
+<connect gate="G$1" pin="CTS" pad="9"/>
+<connect gate="G$1" pin="D+" pad="5"/>
+<connect gate="G$1" pin="D-" pad="6"/>
+<connect gate="G$1" pin="DCD" pad="12"/>
+<connect gate="G$1" pin="DSR" pad="10"/>
+<connect gate="G$1" pin="DTR" pad="13"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="R232" pad="15"/>
+<connect gate="G$1" pin="RI" pad="11"/>
+<connect gate="G$1" pin="RTS" pad="14"/>
+<connect gate="G$1" pin="RXD" pad="3"/>
+<connect gate="G$1" pin="TXD" pad="2"/>
+<connect gate="G$1" pin="V3" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
+<connect gate="G$1" pin="XI" pad="7"/>
+<connect gate="G$1" pin="XO" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7432,7 +7469,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="Arduino Clone v0.1"/>
 <part name="U101" library="SparkFun-IC-Microcontroller" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
-<part name="U201" library="Serial-Basic" deviceset="CH340G" device="SMD" value="CH340G"/>
 <part name="GND3" library="supply" deviceset="GND" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7uF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF"/>
@@ -7445,6 +7481,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="GND5" library="supply" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.2MM-TALL" value="RESET_BTN"/>
 <part name="GND6" library="supply" deviceset="GND" device=""/>
+<part name="U$1" library="my-eagle-lib" deviceset="CH340G" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7598,7 +7635,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="U201" gate="U1" x="170.18" y="134.62"/>
+<instance part="U$1" gate="G$1" x="185.42" y="124.46"/>
 </instances>
 <busses>
 </busses>
@@ -7609,6 +7646,10 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
