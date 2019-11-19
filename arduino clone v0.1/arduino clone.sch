@@ -7482,6 +7482,8 @@ existing UART devices to USB interface. &lt;/p&gt;
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.2MM-TALL" value="RESET_BTN"/>
 <part name="GND6" library="supply" deviceset="GND" device=""/>
 <part name="U201" library="my-eagle-lib" deviceset="CH340G" device=""/>
+<part name="C201" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="GND7" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7636,6 +7638,10 @@ existing UART devices to USB interface. &lt;/p&gt;
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="U201" gate="G$1" x="185.42" y="124.46"/>
+<instance part="C201" gate="G$1" x="167.64" y="203.2"/>
+<instance part="GND7" gate="1" x="167.64" y="193.04" smashed="yes">
+<attribute name="VALUE" x="165.4175" y="190.5" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7643,9 +7649,20 @@ existing UART devices to USB interface. &lt;/p&gt;
 <net name="PP5V0_CH340G" class="0">
 <segment>
 <pinref part="U201" gate="G$1" pin="VCC"/>
-<wire x1="182.88" y1="185.42" x2="182.88" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="218.44" x2="109.22" y2="218.44" width="0.1524" layer="91"/>
-<label x="109.22" y="218.44" size="1.778" layer="95"/>
+<wire x1="182.88" y1="185.42" x2="182.88" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="210.82" x2="167.64" y2="210.82" width="0.1524" layer="91"/>
+<label x="137.16" y="210.82" size="1.778" layer="95"/>
+<pinref part="C201" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="210.82" x2="137.16" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="205.74" x2="167.64" y2="210.82" width="0.1524" layer="91"/>
+<junction x="167.64" y="210.82"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="C201" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="195.58" x2="167.64" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
