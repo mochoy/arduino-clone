@@ -7997,6 +7997,13 @@ existing UART devices to USB interface. &lt;/p&gt;
 <wire x1="76.2" y1="185.42" x2="101.6" y2="185.42" width="0.1524" layer="91"/>
 <label x="88.9" y="185.42" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="VBUS"/>
+<wire x1="43.18" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="129.54" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<label x="71.12" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 </nets>
 </sheet>
