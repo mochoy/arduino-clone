@@ -7485,6 +7485,8 @@ existing UART devices to USB interface. &lt;/p&gt;
 <part name="C201" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="GND7" library="supply" deviceset="GND" device=""/>
 <part name="GND8" library="supply" deviceset="GND" device=""/>
+<part name="C202" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10nF"/>
+<part name="GND9" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7646,6 +7648,10 @@ existing UART devices to USB interface. &lt;/p&gt;
 <instance part="GND8" gate="1" x="185.42" y="60.96" smashed="yes">
 <attribute name="VALUE" x="183.1975" y="58.42" size="1.778" layer="96"/>
 </instance>
+<instance part="C202" gate="G$1" x="203.2" y="203.2"/>
+<instance part="GND9" gate="1" x="203.2" y="193.04" smashed="yes">
+<attribute name="VALUE" x="200.9775" y="190.5" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7672,6 +7678,23 @@ existing UART devices to USB interface. &lt;/p&gt;
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="U201" gate="G$1" pin="GND"/>
 <wire x1="185.42" y1="63.5" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="C202" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="195.58" x2="203.2" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PP3V3_CH340G" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="V3"/>
+<wire x1="187.96" y1="185.42" x2="187.96" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="210.82" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
+<label x="210.82" y="210.82" size="1.778" layer="95"/>
+<pinref part="C202" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="210.82" x2="228.6" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="205.74" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
+<junction x="203.2" y="210.82"/>
 </segment>
 </net>
 </nets>
