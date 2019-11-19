@@ -7885,9 +7885,9 @@ existing UART devices to USB interface. &lt;/p&gt;
 <instance part="GND9" gate="1" x="203.2" y="193.04" smashed="yes">
 <attribute name="VALUE" x="200.9775" y="190.5" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="G$1" x="38.1" y="124.46" rot="MR0"/>
-<instance part="GND10" gate="1" x="63.5" y="144.78" smashed="yes">
-<attribute name="VALUE" x="61.2775" y="142.24" size="1.778" layer="96"/>
+<instance part="X1" gate="G$1" x="38.1" y="132.08" rot="MR0"/>
+<instance part="GND10" gate="1" x="63.5" y="152.4" smashed="yes">
+<attribute name="VALUE" x="61.2775" y="149.86" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -7923,11 +7923,11 @@ existing UART devices to USB interface. &lt;/p&gt;
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="GND"/>
-<wire x1="43.18" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="129.54" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="137.16" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="48.26" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="152.4" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="160.02" x2="63.5" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="160.02" x2="63.5" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PP3V3_CH340G" class="0">
@@ -7940,6 +7940,22 @@ existing UART devices to USB interface. &lt;/p&gt;
 <wire x1="203.2" y1="210.82" x2="228.6" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="205.74" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
 <junction x="203.2" y="210.82"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="D+"/>
+<wire x1="152.4" y1="134.62" x2="48.26" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="134.62" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="D+"/>
+<wire x1="48.26" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="D-"/>
+<pinref part="U201" gate="G$1" pin="D-"/>
+<wire x1="43.18" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
