@@ -7971,7 +7971,7 @@ existing UART devices to USB interface. &lt;/p&gt;
 <junction x="203.2" y="210.82"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="P_USB_D-" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="D-"/>
 <wire x1="43.18" y1="132.08" x2="73.66" y2="132.08" width="0.1524" layer="91"/>
@@ -7979,6 +7979,7 @@ existing UART devices to USB interface. &lt;/p&gt;
 <wire x1="101.6" y1="132.08" x2="101.6" y2="127" width="0.1524" layer="91"/>
 <pinref part="R204" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="127" x2="109.22" y2="127" width="0.1524" layer="91"/>
+<label x="53.34" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_ID" class="0">
@@ -8029,13 +8030,14 @@ existing UART devices to USB interface. &lt;/p&gt;
 <wire x1="129.54" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="P_USB_D+" class="0">
 <segment>
 <pinref part="R203" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="137.16" x2="101.6" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="137.16" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="D+"/>
 <wire x1="101.6" y1="134.62" x2="43.18" y2="134.62" width="0.1524" layer="91"/>
+<label x="53.34" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
