@@ -7484,6 +7484,7 @@ existing UART devices to USB interface. &lt;/p&gt;
 <part name="U201" library="my-eagle-lib" deviceset="CH340G" device=""/>
 <part name="C201" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="GND7" library="supply" deviceset="GND" device=""/>
+<part name="GND8" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7642,6 +7643,9 @@ existing UART devices to USB interface. &lt;/p&gt;
 <instance part="GND7" gate="1" x="167.64" y="193.04" smashed="yes">
 <attribute name="VALUE" x="165.4175" y="190.5" size="1.778" layer="96"/>
 </instance>
+<instance part="GND8" gate="1" x="185.42" y="60.96" smashed="yes">
+<attribute name="VALUE" x="183.1975" y="58.42" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7663,6 +7667,11 @@ existing UART devices to USB interface. &lt;/p&gt;
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="C201" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="195.58" x2="167.64" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="U201" gate="G$1" pin="GND"/>
+<wire x1="185.42" y1="63.5" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
