@@ -7892,8 +7892,14 @@ existing UART devices to USB interface. &lt;/p&gt;
 <instance part="GND10" gate="1" x="53.34" y="149.86" smashed="yes">
 <attribute name="VALUE" x="51.1175" y="147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="R201" gate="G$1" x="76.2" y="175.26" rot="R90"/>
-<instance part="R202" gate="G$1" x="76.2" y="157.48" rot="R90"/>
+<instance part="R201" gate="G$1" x="76.2" y="175.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="80.01" y="174.2186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="80.01" y="171.958" size="1.778" layer="96"/>
+</instance>
+<instance part="R202" gate="G$1" x="76.2" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="80.01" y="158.9786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="80.01" y="156.718" size="1.778" layer="96"/>
+</instance>
 <instance part="GND11" gate="1" x="76.2" y="147.32" smashed="yes">
 <attribute name="VALUE" x="73.9775" y="144.78" size="1.778" layer="96"/>
 </instance>
