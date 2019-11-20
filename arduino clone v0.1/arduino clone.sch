@@ -7879,11 +7879,16 @@ existing UART devices to USB interface. &lt;/p&gt;
 <sheet>
 <plain>
 <text x="25.4" y="238.76" size="5.08" layer="97">USB to UART</text>
-<wire x1="83.82" y1="198.12" x2="129.54" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="129.54" y1="198.12" x2="129.54" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="129.54" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="83.82" y1="198.12" x2="147.32" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="147.32" y1="198.12" x2="147.32" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="147.32" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="109.22" y1="160.02" x2="83.82" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="83.82" y1="160.02" x2="83.82" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
+<text x="114.3" y="172.72" size="1.778" layer="97">Strap these resistors 
+to configure USB mode 
+(host or device). For 
+more info, look up "USB 
+OTG".</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
