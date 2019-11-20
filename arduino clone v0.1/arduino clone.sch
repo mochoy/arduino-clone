@@ -7720,8 +7720,12 @@ existing UART devices to USB interface. &lt;/p&gt;
 <part name="GND9" library="supply" deviceset="GND" device=""/>
 <part name="J1" library="Testing" deviceset="USB-AB" device="IN&amp;OUT"/>
 <part name="GND10" library="supply" deviceset="GND" device=""/>
-<part name="R201" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R202" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="R201" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="STUFF" value="NO STUFF"/>
+</part>
+<part name="R202" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="STUFF" value="NO STUFF"/>
+</part>
 <part name="GND11" library="supply" deviceset="GND" device=""/>
 <part name="R203" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R204" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
@@ -7875,6 +7879,11 @@ existing UART devices to USB interface. &lt;/p&gt;
 <sheet>
 <plain>
 <text x="25.4" y="238.76" size="5.08" layer="97">USB to UART</text>
+<wire x1="83.82" y1="198.12" x2="129.54" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="129.54" y1="198.12" x2="129.54" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="129.54" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="109.22" y1="160.02" x2="83.82" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="83.82" y1="160.02" x2="83.82" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -7894,16 +7903,18 @@ existing UART devices to USB interface. &lt;/p&gt;
 <instance part="GND10" gate="1" x="53.34" y="149.86" smashed="yes">
 <attribute name="VALUE" x="51.1175" y="147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="R201" gate="G$1" x="86.36" y="175.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="90.17" y="174.2186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.17" y="171.958" size="1.778" layer="96"/>
+<instance part="R201" gate="G$1" x="91.44" y="190.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.25" y="189.4586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="95.25" y="187.198" size="1.778" layer="96"/>
+<attribute name="STUFF" x="93.98" y="182.88" size="1.778" layer="96"/>
 </instance>
-<instance part="R202" gate="G$1" x="86.36" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="90.17" y="158.9786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.17" y="156.718" size="1.778" layer="96"/>
+<instance part="R202" gate="G$1" x="91.44" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.25" y="169.1386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="95.25" y="166.878" size="1.778" layer="96"/>
+<attribute name="STUFF" x="93.98" y="162.56" size="1.778" layer="96"/>
 </instance>
-<instance part="GND11" gate="1" x="86.36" y="147.32" smashed="yes">
-<attribute name="VALUE" x="84.1375" y="144.78" size="1.778" layer="96"/>
+<instance part="GND11" gate="1" x="91.44" y="154.94" smashed="yes">
+<attribute name="VALUE" x="89.2175" y="152.4" size="1.778" layer="96"/>
 </instance>
 <instance part="R203" gate="G$1" x="114.3" y="137.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="113.03" y="141.1986" size="1.778" layer="95"/>
@@ -7956,7 +7967,7 @@ existing UART devices to USB interface. &lt;/p&gt;
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="R202" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="149.86" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="157.48" x2="91.44" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PP3V3_CH340G" class="0">
@@ -7986,22 +7997,22 @@ existing UART devices to USB interface. &lt;/p&gt;
 <segment>
 <pinref part="J1" gate="G$1" pin="USBID"/>
 <wire x1="43.18" y1="137.16" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="137.16" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="165.1" x2="86.36" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="137.16" x2="73.66" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="177.8" x2="91.44" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="R201" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="165.1" x2="86.36" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="177.8" x2="91.44" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="R202" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="165.1" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
-<junction x="86.36" y="165.1"/>
+<wire x1="91.44" y1="177.8" x2="91.44" y2="172.72" width="0.1524" layer="91"/>
+<junction x="91.44" y="177.8"/>
 <label x="53.34" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PP5V0_USB" class="0">
 <segment>
 <pinref part="R201" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="180.34" x2="86.36" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="185.42" x2="111.76" y2="185.42" width="0.1524" layer="91"/>
-<label x="99.06" y="185.42" size="1.778" layer="95"/>
+<wire x1="91.44" y1="195.58" x2="91.44" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="203.2" x2="116.84" y2="203.2" width="0.1524" layer="91"/>
+<label x="104.14" y="203.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
