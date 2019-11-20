@@ -8005,10 +8005,8 @@ existing UART devices to USB interface. &lt;/p&gt;
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
-<wire x1="43.18" y1="129.54" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="129.54" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="109.22" x2="93.98" y2="109.22" width="0.1524" layer="91"/>
-<label x="81.28" y="109.22" size="1.778" layer="95"/>
+<wire x1="43.18" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
+<label x="53.34" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P_CH340G_D+" class="0">
