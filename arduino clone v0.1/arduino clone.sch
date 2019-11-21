@@ -7729,6 +7729,8 @@ existing UART devices to USB interface. &lt;/p&gt;
 <part name="GND11" library="supply" deviceset="GND" device=""/>
 <part name="R203" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R204" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R205" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R206" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -7938,6 +7940,14 @@ resistors though.</text>
 <attribute name="NAME" x="115.57" y="115.7986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="115.57" y="113.538" size="1.778" layer="96"/>
 </instance>
+<instance part="R205" gate="G$1" x="292.1" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="290.83" y="125.9586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="290.83" y="123.698" size="1.778" layer="96"/>
+</instance>
+<instance part="R206" gate="G$1" x="292.1" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="290.83" y="115.7986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="290.83" y="113.538" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8070,6 +8080,10 @@ resistors though.</text>
 <pinref part="U201" gate="G$1" pin="RXD"/>
 <wire x1="238.76" y1="114.3" x2="269.24" y2="114.3" width="0.1524" layer="91"/>
 <label x="256.54" y="114.3" size="1.778" layer="95"/>
+<wire x1="269.24" y1="114.3" x2="276.86" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="114.3" x2="276.86" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="R206" gate="G$1" pin="2"/>
+<wire x1="276.86" y1="111.76" x2="287.02" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CH340G_TX" class="0">
@@ -8077,6 +8091,26 @@ resistors though.</text>
 <pinref part="U201" gate="G$1" pin="TXD"/>
 <wire x1="238.76" y1="119.38" x2="269.24" y2="119.38" width="0.1524" layer="91"/>
 <label x="256.54" y="119.38" size="1.778" layer="95"/>
+<wire x1="269.24" y1="119.38" x2="276.86" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="119.38" x2="276.86" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R205" gate="G$1" pin="2"/>
+<wire x1="276.86" y1="121.92" x2="287.02" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R205" gate="G$1" pin="1"/>
+<wire x1="297.18" y1="121.92" x2="304.8" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="121.92" x2="304.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="119.38" x2="327.66" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R206" gate="G$1" pin="1"/>
+<wire x1="297.18" y1="111.76" x2="304.8" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="111.76" x2="304.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="114.3" x2="327.66" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
