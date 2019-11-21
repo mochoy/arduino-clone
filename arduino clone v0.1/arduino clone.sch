@@ -7888,10 +7888,16 @@ to configure USB mode
 (host or device). For 
 more info, look up "USB 
 OTG".</text>
-<wire x1="91.44" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="137.16" y1="147.32" x2="137.16" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="137.16" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="91.44" y1="93.98" x2="91.44" y2="147.32" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="91.44" y1="157.48" x2="142.24" y2="157.48" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="142.24" y1="157.48" x2="142.24" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="142.24" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="91.44" y1="104.14" x2="91.44" y2="157.48" width="0.1524" layer="97" style="shortdash"/>
+<text x="93.98" y="137.16" size="1.778" layer="97">Stuffed with shorts by default. If too 
+many reflections are observed, replace 
+the resistors with 22 ohm as per the 
+USB spec. The CH340G should have 
+internal 22 ohm series terminating 
+resistors though.</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
