@@ -8065,6 +8065,20 @@ resistors though.</text>
 <label x="35.56" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="CH340G_RX" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="RXD"/>
+<wire x1="238.76" y1="114.3" x2="269.24" y2="114.3" width="0.1524" layer="91"/>
+<label x="256.54" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CH340G_TX" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="TXD"/>
+<wire x1="238.76" y1="119.38" x2="269.24" y2="119.38" width="0.1524" layer="91"/>
+<label x="256.54" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
