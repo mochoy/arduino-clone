@@ -7876,6 +7876,20 @@ existing UART devices to USB interface. &lt;/p&gt;
 <label x="152.4" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="AR_RX" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PD0(RXD)"/>
+<wire x1="215.9" y1="139.7" x2="241.3" y2="139.7" width="0.1524" layer="91"/>
+<label x="233.68" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AR_TX" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PD1(TXD)"/>
+<wire x1="215.9" y1="137.16" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
+<label x="233.68" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
