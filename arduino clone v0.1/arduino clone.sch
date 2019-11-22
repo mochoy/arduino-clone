@@ -7914,6 +7914,10 @@ the resistors with 22 ohm as per the
 USB spec. The CH340G should have 
 internal 22 ohm series terminating 
 resistors though.</text>
+<wire x1="279.4" y1="160.02" x2="330.2" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="330.2" y1="160.02" x2="330.2" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="330.2" y1="106.68" x2="279.4" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="279.4" y1="106.68" x2="279.4" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -7954,13 +7958,13 @@ resistors though.</text>
 <attribute name="NAME" x="115.57" y="115.7986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="115.57" y="113.538" size="1.778" layer="96"/>
 </instance>
-<instance part="R205" gate="G$1" x="292.1" y="121.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="290.83" y="125.9586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="290.83" y="123.698" size="1.778" layer="96"/>
+<instance part="R205" gate="G$1" x="304.8" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="303.53" y="125.9586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="303.53" y="123.698" size="1.778" layer="96"/>
 </instance>
-<instance part="R206" gate="G$1" x="292.1" y="111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="290.83" y="115.7986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="290.83" y="113.538" size="1.778" layer="96"/>
+<instance part="R206" gate="G$1" x="304.8" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="303.53" y="115.7986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="303.53" y="113.538" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8094,10 +8098,10 @@ resistors though.</text>
 <pinref part="U201" gate="G$1" pin="RXD"/>
 <wire x1="238.76" y1="114.3" x2="266.7" y2="114.3" width="0.1524" layer="91"/>
 <label x="254" y="114.3" size="1.778" layer="95"/>
-<wire x1="266.7" y1="114.3" x2="279.4" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="114.3" x2="279.4" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="114.3" x2="292.1" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="114.3" x2="292.1" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R206" gate="G$1" pin="2"/>
-<wire x1="279.4" y1="111.76" x2="287.02" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="111.76" x2="299.72" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CH340G_TX" class="0">
@@ -8105,28 +8109,28 @@ resistors though.</text>
 <pinref part="U201" gate="G$1" pin="TXD"/>
 <wire x1="238.76" y1="119.38" x2="269.24" y2="119.38" width="0.1524" layer="91"/>
 <label x="254" y="119.38" size="1.778" layer="95"/>
-<wire x1="269.24" y1="119.38" x2="279.4" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="119.38" x2="279.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="119.38" x2="292.1" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="119.38" x2="292.1" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R205" gate="G$1" pin="2"/>
-<wire x1="279.4" y1="121.92" x2="287.02" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="121.92" x2="299.72" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AR_RX" class="0">
 <segment>
 <pinref part="R205" gate="G$1" pin="1"/>
-<wire x1="297.18" y1="121.92" x2="304.8" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="121.92" x2="304.8" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="119.38" x2="330.2" y2="119.38" width="0.1524" layer="91"/>
-<label x="322.58" y="119.38" size="1.778" layer="95"/>
+<wire x1="309.88" y1="121.92" x2="317.5" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="121.92" x2="317.5" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="119.38" x2="347.98" y2="119.38" width="0.1524" layer="91"/>
+<label x="340.36" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_TX" class="0">
 <segment>
 <pinref part="R206" gate="G$1" pin="1"/>
-<wire x1="297.18" y1="111.76" x2="304.8" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="111.76" x2="304.8" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="114.3" x2="330.2" y2="114.3" width="0.1524" layer="91"/>
-<label x="322.58" y="114.3" size="1.778" layer="95"/>
+<wire x1="309.88" y1="111.76" x2="317.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="111.76" x2="317.5" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="114.3" x2="347.98" y2="114.3" width="0.1524" layer="91"/>
+<label x="340.36" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
