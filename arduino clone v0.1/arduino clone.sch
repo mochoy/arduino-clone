@@ -7908,16 +7908,21 @@ OTG".</text>
 <wire x1="142.24" y1="157.48" x2="142.24" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="142.24" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="91.44" y1="104.14" x2="91.44" y2="157.48" width="0.1524" layer="97" style="shortdash"/>
-<text x="93.98" y="137.16" size="1.778" layer="97">Stuffed with shorts by default. If too 
+<text x="93.98" y="139.7" size="1.778" layer="97">Stuffed with shorts by default. If too 
 many reflections are observed, replace 
 the resistors with 22 ohm as per the 
 USB spec. The CH340G should have 
 internal 22 ohm series terminating 
 resistors though.</text>
-<wire x1="279.4" y1="160.02" x2="330.2" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="330.2" y1="160.02" x2="330.2" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="279.4" y1="152.4" x2="330.2" y2="152.4" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="330.2" y1="152.4" x2="330.2" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="330.2" y1="106.68" x2="279.4" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="279.4" y1="106.68" x2="279.4" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="279.4" y1="106.68" x2="279.4" y2="152.4" width="0.1524" layer="97" style="shortdash"/>
+<text x="281.94" y="137.16" size="1.778" layer="97">Stuffed with shorts by default. If I 
+accidently swap the RX and TX lines, 
+I can manually solder the 2 lines 
+correctly easily by desoldering the 
+shorts.</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
