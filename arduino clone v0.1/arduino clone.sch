@@ -7877,6 +7877,8 @@ W = angled&lt;p&gt;
 <part name="GND14" library="supply" deviceset="GND" device=""/>
 <part name="C204" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C203" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
+<part name="GND15" library="supply" deviceset="GND" device=""/>
+<part name="GND16" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8056,9 +8058,9 @@ I saw left this line floating,
 so I assigned both resistors
 to NO STUFF.</text>
 <wire x1="101.6" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="152.4" y1="200.66" x2="152.4" y2="147.32" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="152.4" y1="147.32" x2="101.6" y2="147.32" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="101.6" y1="147.32" x2="101.6" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="152.4" y1="200.66" x2="152.4" y2="149.86" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="152.4" y1="149.86" x2="101.6" y2="149.86" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="101.6" y1="149.86" x2="101.6" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <text x="104.14" y="182.88" size="1.778" layer="97">Stuffed with shorts by default. If too 
 many reflections are observed, replace 
 the resistors with 22 ohm as per the 
@@ -8193,13 +8195,19 @@ stuff'd strapping resistors.</text>
 <instance part="GND14" gate="1" x="127" y="12.7" smashed="yes">
 <attribute name="VALUE" x="124.7775" y="10.16" size="1.778" layer="96"/>
 </instance>
-<instance part="C204" gate="G$1" x="109.22" y="101.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="108.204" y="107.061" size="1.778" layer="95"/>
-<attribute name="VALUE" x="108.204" y="104.521" size="1.778" layer="96"/>
+<instance part="C204" gate="G$1" x="109.22" y="111.76" smashed="yes">
+<attribute name="NAME" x="113.284" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.284" y="112.141" size="1.778" layer="96"/>
 </instance>
-<instance part="C203" gate="G$1" x="104.14" y="124.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="103.124" y="129.921" size="1.778" layer="95"/>
-<attribute name="VALUE" x="103.124" y="127.381" size="1.778" layer="96"/>
+<instance part="C203" gate="G$1" x="86.36" y="111.76" smashed="yes">
+<attribute name="NAME" x="90.424" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.424" y="112.141" size="1.778" layer="96"/>
+</instance>
+<instance part="GND15" gate="1" x="86.36" y="96.52" smashed="yes">
+<attribute name="VALUE" x="84.1375" y="93.98" size="1.778" layer="96"/>
+</instance>
+<instance part="GND16" gate="1" x="109.22" y="96.52" smashed="yes">
+<attribute name="VALUE" x="106.9975" y="93.98" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8271,6 +8279,16 @@ stuff'd strapping resistors.</text>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="R208" gate="G$1" pin="1"/>
 <wire x1="127" y1="15.24" x2="127" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND15" gate="1" pin="GND"/>
+<pinref part="C203" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="99.06" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="C204" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="99.06" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PP3V3_CH340G" class="0">
@@ -8541,6 +8559,24 @@ stuff'd strapping resistors.</text>
 <wire x1="127" y1="40.64" x2="129.54" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
 <junction x="127" y="40.64"/>
+</segment>
+</net>
+<net name="CH340G_XIN" class="0">
+<segment>
+<pinref part="C203" gate="G$1" pin="1"/>
+<pinref part="U201" gate="G$1" pin="XI"/>
+<wire x1="86.36" y1="114.3" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
+<label x="160.02" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CH340G_XO" class="0">
+<segment>
+<pinref part="C204" gate="G$1" pin="1"/>
+<pinref part="U201" gate="G$1" pin="XO"/>
+<wire x1="109.22" y1="114.3" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
+<label x="160.02" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
