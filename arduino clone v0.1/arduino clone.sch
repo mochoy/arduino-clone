@@ -8077,10 +8077,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="supply" deviceset="GND" device=""/>
 <part name="GND2" library="supply" deviceset="GND" device=""/>
 <part name="GND4" library="supply" deviceset="GND" device=""/>
-<part name="R1" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
+<part name="R101" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="C104" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="GND5" library="supply" deviceset="GND" device=""/>
-<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.2MM-TALL" value="RESET_BTN"/>
+<part name="S101" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.2MM-TALL" value="RESET_BTN"/>
 <part name="GND6" library="supply" deviceset="GND" device=""/>
 <part name="U201" library="my-eagle-lib" deviceset="CH340G" device=""/>
 <part name="C201" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
@@ -8143,15 +8143,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND4" gate="1" x="81.28" y="177.8" smashed="yes">
 <attribute name="VALUE" x="79.0575" y="175.26" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="144.78" y="175.26" smashed="yes" rot="R90">
+<instance part="R101" gate="G$1" x="144.78" y="175.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="148.59" y="176.7586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="148.59" y="174.498" size="1.778" layer="96"/>
 </instance>
-<instance part="C4" gate="G$1" x="142.24" y="142.24"/>
+<instance part="C104" gate="G$1" x="142.24" y="142.24"/>
 <instance part="GND5" gate="1" x="142.24" y="132.08" smashed="yes">
 <attribute name="VALUE" x="140.0175" y="129.54" size="1.778" layer="96"/>
 </instance>
-<instance part="S1" gate="G$1" x="124.46" y="162.56"/>
+<instance part="S101" gate="G$1" x="124.46" y="162.56"/>
 <instance part="GND6" gate="1" x="109.22" y="152.4" smashed="yes">
 <attribute name="VALUE" x="106.9975" y="149.86" size="1.778" layer="96"/>
 </instance>
@@ -8190,7 +8190,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="165.1" y="157.48"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R101" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="180.34" x2="144.78" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="187.96" x2="127" y2="187.96" width="0.1524" layer="91"/>
 <label x="127" y="187.96" size="1.778" layer="95"/>
@@ -8228,32 +8228,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C104" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="134.62" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="109.22" y1="154.94" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="162.56" x2="111.76" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="1"/>
+<pinref part="S101" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="162.56" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCU_RESET" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R101" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="170.18" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="U101" gate="U$1" pin="PC6(/RESET)"/>
 <wire x1="144.78" y1="162.56" x2="167.64" y2="162.56" width="0.1524" layer="91"/>
 <label x="152.4" y="162.56" size="1.778" layer="95"/>
-<pinref part="S1" gate="G$1" pin="2"/>
+<pinref part="S101" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="162.56" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
 <junction x="144.78" y="162.56"/>
 </segment>
 </net>
 <net name="MCU_AREF" class="0">
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C104" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="144.78" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U101" gate="U$1" pin="AREF"/>
 <wire x1="142.24" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
