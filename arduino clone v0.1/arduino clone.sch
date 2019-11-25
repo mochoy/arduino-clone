@@ -7731,6 +7731,7 @@ existing UART devices to USB interface. &lt;/p&gt;
 <part name="R204" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R205" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R206" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="C203" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7971,6 +7972,10 @@ shorts.</text>
 <attribute name="NAME" x="303.53" y="115.7986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="303.53" y="113.538" size="1.778" layer="96"/>
 </instance>
+<instance part="C203" gate="G$1" x="292.1" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="291.084" y="89.281" size="1.778" layer="95"/>
+<attribute name="VALUE" x="291.084" y="86.741" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8136,6 +8141,22 @@ shorts.</text>
 <wire x1="317.5" y1="111.76" x2="317.5" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="114.3" x2="347.98" y2="114.3" width="0.1524" layer="91"/>
 <label x="340.36" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CH340G_DTR" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="DTR"/>
+<wire x1="238.76" y1="83.82" x2="281.94" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C203" gate="G$1" pin="1"/>
+<wire x1="281.94" y1="83.82" x2="289.56" y2="83.82" width="0.1524" layer="91"/>
+<label x="254" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_RESET" class="0">
+<segment>
+<pinref part="C203" gate="G$1" pin="2"/>
+<wire x1="297.18" y1="83.82" x2="330.2" y2="83.82" width="0.1524" layer="91"/>
+<label x="317.5" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
