@@ -8013,18 +8013,20 @@ W = angled&lt;p&gt;
 <label x="152.4" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="AR_RX" class="0">
+<net name="MCU_RX" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD0(RXD)"/>
 <wire x1="215.9" y1="139.7" x2="241.3" y2="139.7" width="0.1524" layer="91"/>
 <label x="233.68" y="139.7" size="1.778" layer="95"/>
+<wire x1="241.3" y1="139.7" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AR_TX" class="0">
+<net name="MCU_TX" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD1(TXD)"/>
 <wire x1="215.9" y1="137.16" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
 <label x="233.68" y="137.16" size="1.778" layer="95"/>
+<wire x1="241.3" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -8320,24 +8322,6 @@ shorts.</text>
 <wire x1="294.64" y1="132.08" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AR_RX" class="0">
-<segment>
-<pinref part="R205" gate="G$1" pin="1"/>
-<wire x1="312.42" y1="132.08" x2="320.04" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="132.08" x2="320.04" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="129.54" x2="350.52" y2="129.54" width="0.1524" layer="91"/>
-<label x="342.9" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AR_TX" class="0">
-<segment>
-<pinref part="R206" gate="G$1" pin="1"/>
-<wire x1="312.42" y1="121.92" x2="320.04" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="121.92" x2="320.04" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="124.46" x2="350.52" y2="124.46" width="0.1524" layer="91"/>
-<label x="342.9" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="CH340G_DTR" class="0">
 <segment>
 <pinref part="U201" gate="G$1" pin="DTR"/>
@@ -8426,6 +8410,13 @@ shorts.</text>
 <wire x1="297.18" y1="53.34" x2="279.4" y2="53.34" width="0.1524" layer="91"/>
 <label x="279.4" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R205" gate="G$1" pin="1"/>
+<wire x1="312.42" y1="132.08" x2="320.04" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="132.08" x2="320.04" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="129.54" x2="350.52" y2="129.54" width="0.1524" layer="91"/>
+<label x="342.9" y="129.54" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FDTI_TX" class="0">
 <segment>
@@ -8440,6 +8431,13 @@ shorts.</text>
 <pinref part="R210" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="43.18" x2="279.4" y2="43.18" width="0.1524" layer="91"/>
 <label x="279.4" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R206" gate="G$1" pin="1"/>
+<wire x1="312.42" y1="121.92" x2="320.04" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="121.92" x2="320.04" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="124.46" x2="350.52" y2="124.46" width="0.1524" layer="91"/>
+<label x="342.9" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FDTI_DTR" class="0">
