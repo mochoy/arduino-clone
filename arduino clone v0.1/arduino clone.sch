@@ -7498,8 +7498,8 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <pin name="V3" x="2.54" y="60.96" direction="pwr" rot="R270"/>
 <pin name="D+" x="-33.02" y="10.16"/>
 <pin name="D-" x="-33.02" y="5.08"/>
-<pin name="XI" x="-33.02" y="-10.16"/>
-<pin name="XO" x="-33.02" y="-15.24"/>
+<pin name="XTAL_I" x="-33.02" y="-10.16"/>
+<pin name="XTAL_O" x="-33.02" y="-15.24"/>
 <pin name="R232" x="-33.02" y="-30.48" direction="in"/>
 <pin name="CTS" x="33.02" y="-5.08" direction="in" rot="R180"/>
 <pin name="DSR" x="33.02" y="-10.16" direction="in" rot="R180"/>
@@ -7580,8 +7580,8 @@ existing UART devices to USB interface. &lt;/p&gt;
 <connect gate="G$1" pin="TXD" pad="2"/>
 <connect gate="G$1" pin="V3" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="16"/>
-<connect gate="G$1" pin="XI" pad="7"/>
-<connect gate="G$1" pin="XO" pad="8"/>
+<connect gate="G$1" pin="XTAL_I" pad="7"/>
+<connect gate="G$1" pin="XTAL_O" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8808,7 +8808,7 @@ stuff'd strapping resistors.</text>
 <net name="CH340G_XIN" class="0">
 <segment>
 <pinref part="C203" gate="G$1" pin="1"/>
-<pinref part="U201" gate="G$1" pin="XI"/>
+<pinref part="U201" gate="G$1" pin="XTAL_I"/>
 <wire x1="86.36" y1="119.38" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="129.54" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
@@ -8821,7 +8821,7 @@ stuff'd strapping resistors.</text>
 <net name="CH340G_XO" class="0">
 <segment>
 <pinref part="C204" gate="G$1" pin="1"/>
-<pinref part="U201" gate="G$1" pin="XO"/>
+<pinref part="U201" gate="G$1" pin="XTAL_O"/>
 <wire x1="106.68" y1="119.38" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="129.54" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
