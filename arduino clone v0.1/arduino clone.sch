@@ -8110,11 +8110,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R211" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R212" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R213" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R207" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="STUFF" value="NO STUFF"/>
+</part>
+<part name="R208" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="STUFF" value="NO STUFF"/>
+</part>
+<part name="GND14" library="supply" deviceset="GND" device=""/>
 <part name="C204" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C203" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="GND15" library="supply" deviceset="GND" device=""/>
 <part name="GND16" library="supply" deviceset="GND" device=""/>
-<part name="Y201" library="SparkFun-Clocks" deviceset="CRYSTAL-12MHZ" device="&quot;" value="12MHz"/>
+<part name="Y2" library="SparkFun-Clocks" deviceset="CRYSTAL-12MHZ" device="&quot;" value="12MHz"/>
 </parts>
 <sheets>
 <sheet>
@@ -8329,6 +8336,16 @@ CH340Gs leave CTS floating.</text>
 <wire x1="269.24" y1="48.26" x2="231.14" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="231.14" y1="48.26" x2="231.14" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="231.14" y1="86.36" x2="269.24" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<text x="55.88" y="50.8" size="1.778" layer="97">Pull this line high to enable auxilary RS232. 
+Has internal pull-down. Reference 
+schematics I've seen leave this pin floating,
+so I left it floating in this design. Pin can be 
+configured however using external no-
+stuff'd strapping resistors.</text>
+<wire x1="147.32" y1="86.36" x2="147.32" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="147.32" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="53.34" y1="25.4" x2="53.34" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="53.34" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -8408,6 +8425,19 @@ CH340Gs leave CTS floating.</text>
 <attribute name="NAME" x="311.15" y="49.7586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="47.498" size="1.778" layer="96"/>
 </instance>
+<instance part="R207" gate="G$1" x="127" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="70.0786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="130.81" y="67.818" size="1.778" layer="96"/>
+<attribute name="STUFF" x="129.54" y="63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="R208" gate="G$1" x="127" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="44.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="130.81" y="42.418" size="1.778" layer="96"/>
+<attribute name="STUFF" x="129.54" y="38.1" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="127" y="30.48" smashed="yes">
+<attribute name="VALUE" x="124.7775" y="27.94" size="1.778" layer="96"/>
+</instance>
 <instance part="C204" gate="G$1" x="106.68" y="116.84" smashed="yes">
 <attribute name="NAME" x="110.744" y="114.681" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.744" y="117.221" size="1.778" layer="96"/>
@@ -8422,7 +8452,7 @@ CH340Gs leave CTS floating.</text>
 <instance part="GND16" gate="1" x="106.68" y="106.68" smashed="yes">
 <attribute name="VALUE" x="104.4575" y="104.14" size="1.778" layer="96"/>
 </instance>
-<instance part="Y201" gate="G$1" x="96.52" y="129.54"/>
+<instance part="Y2" gate="G$1" x="96.52" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -8437,6 +8467,13 @@ CH340Gs leave CTS floating.</text>
 <wire x1="198.12" y1="238.76" x2="167.64" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="233.68" x2="198.12" y2="238.76" width="0.1524" layer="91"/>
 <junction x="198.12" y="238.76"/>
+</segment>
+<segment>
+<pinref part="R207" gate="G$1" pin="2"/>
+<wire x1="127" y1="76.2" x2="127" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="127" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<label x="106.68" y="81.28" size="1.778" layer="95"/>
+<wire x1="109.22" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8481,6 +8518,11 @@ CH340Gs leave CTS floating.</text>
 <wire x1="251.46" y1="76.2" x2="256.54" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="251.46" y1="73.66" x2="251.46" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="R208" gate="G$1" pin="1"/>
+<wire x1="127" y1="33.02" x2="127" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
@@ -8748,7 +8790,19 @@ CH340Gs leave CTS floating.</text>
 <segment>
 <pinref part="U201" gate="G$1" pin="R232"/>
 <wire x1="182.88" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="121.92" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
 <label x="160.02" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R208" gate="G$1" pin="2"/>
+<pinref part="R207" gate="G$1" pin="1"/>
+<wire x1="127" y1="50.8" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="127" y1="58.42" x2="127" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="127" y1="58.42" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="58.42" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
+<junction x="127" y="58.42"/>
 </segment>
 </net>
 <net name="CH340G_XIN" class="0">
@@ -8759,7 +8813,7 @@ CH340Gs leave CTS floating.</text>
 <wire x1="86.36" y1="129.54" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
 <label x="160.02" y="142.24" size="1.778" layer="95"/>
-<pinref part="Y201" gate="G$1" pin="1"/>
+<pinref part="Y2" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
 <junction x="86.36" y="129.54"/>
 </segment>
@@ -8772,7 +8826,7 @@ CH340Gs leave CTS floating.</text>
 <wire x1="106.68" y1="129.54" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
 <label x="160.02" y="137.16" size="1.778" layer="95"/>
-<pinref part="Y201" gate="G$1" pin="2"/>
+<pinref part="Y2" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="129.54" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
 <junction x="106.68" y="129.54"/>
 </segment>
