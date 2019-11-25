@@ -7861,6 +7861,10 @@ W = angled&lt;p&gt;
 <part name="R206" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="C203" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="J202" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1" value="FTDI Breakout Header"/>
+<part name="GND12" library="supply" deviceset="GND" device=""/>
+<part name="R208" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R207" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="GND13" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8105,7 +8109,21 @@ shorts.</text>
 <attribute name="NAME" x="293.624" y="91.821" size="1.778" layer="95"/>
 <attribute name="VALUE" x="293.624" y="89.281" size="1.778" layer="96"/>
 </instance>
-<instance part="J202" gate="1" x="353.06" y="50.8" rot="R180"/>
+<instance part="J202" gate="1" x="342.9" y="50.8" rot="R180"/>
+<instance part="GND12" gate="1" x="307.34" y="71.12" smashed="yes">
+<attribute name="VALUE" x="305.1175" y="68.58" size="1.778" layer="96"/>
+</instance>
+<instance part="R208" gate="G$1" x="299.72" y="55.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="298.45" y="59.9186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="298.45" y="57.658" size="1.778" layer="96"/>
+</instance>
+<instance part="R207" gate="G$1" x="269.24" y="55.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="267.97" y="59.9186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="267.97" y="57.658" size="1.778" layer="96"/>
+</instance>
+<instance part="GND13" gate="1" x="259.08" y="48.26" smashed="yes">
+<attribute name="VALUE" x="256.8575" y="45.72" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8150,6 +8168,21 @@ shorts.</text>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="R202" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="170.18" x2="93.98" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="307.34" y1="76.2" x2="312.42" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="76.2" x2="312.42" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="J202" gate="1" pin="1"/>
+<wire x1="312.42" y1="58.42" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="307.34" y1="73.66" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="259.08" y1="50.8" x2="259.08" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="53.34" x2="259.08" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R207" gate="G$1" pin="2"/>
+<wire x1="259.08" y1="55.88" x2="264.16" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PP3V3_CH340G" class="0">
@@ -8208,6 +8241,11 @@ shorts.</text>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
 <wire x1="22.86" y1="116.84" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
 <label x="33.02" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J202" gate="1" pin="3"/>
+<wire x1="335.28" y1="53.34" x2="312.42" y2="53.34" width="0.1524" layer="91"/>
+<label x="312.42" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P_CH340G_D+" class="0">
@@ -8308,6 +8346,12 @@ shorts.</text>
 <wire x1="241.3" y1="106.68" x2="279.4" y2="106.68" width="0.1524" layer="91"/>
 <label x="256.54" y="106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R207" gate="G$1" pin="1"/>
+<pinref part="R208" gate="G$1" pin="2"/>
+<wire x1="274.32" y1="55.88" x2="294.64" y2="55.88" width="0.1524" layer="91"/>
+<label x="276.86" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH340G_DSR" class="0">
 <segment>
@@ -8335,6 +8379,14 @@ shorts.</text>
 <pinref part="U201" gate="G$1" pin="RTS"/>
 <wire x1="241.3" y1="81.28" x2="279.4" y2="81.28" width="0.1524" layer="91"/>
 <label x="256.54" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FTDI_CTS" class="0">
+<segment>
+<pinref part="J202" gate="1" pin="2"/>
+<wire x1="335.28" y1="55.88" x2="304.8" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R208" gate="G$1" pin="1"/>
+<label x="312.42" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
