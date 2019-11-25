@@ -7859,7 +7859,7 @@ W = angled&lt;p&gt;
 <part name="R204" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R205" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R206" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
-<part name="C203" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C205" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="J202" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1" value="FTDI Breakout Header"/>
 <part name="GND12" library="supply" deviceset="GND" device=""/>
 <part name="R210" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
@@ -7875,6 +7875,8 @@ W = angled&lt;p&gt;
 <attribute name="STUFF" value="NO STUFF"/>
 </part>
 <part name="GND14" library="supply" deviceset="GND" device=""/>
+<part name="C204" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
+<part name="C203" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -8147,7 +8149,7 @@ stuff'd strapping resistors.</text>
 <attribute name="NAME" x="313.69" y="158.9786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="313.69" y="156.718" size="1.778" layer="96"/>
 </instance>
-<instance part="C203" gate="G$1" x="302.26" y="127" smashed="yes" rot="R90">
+<instance part="C205" gate="G$1" x="302.26" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="301.244" y="132.461" size="1.778" layer="95"/>
 <attribute name="VALUE" x="301.244" y="129.921" size="1.778" layer="96"/>
 </instance>
@@ -8190,6 +8192,14 @@ stuff'd strapping resistors.</text>
 </instance>
 <instance part="GND14" gate="1" x="127" y="12.7" smashed="yes">
 <attribute name="VALUE" x="124.7775" y="10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="C204" gate="G$1" x="109.22" y="101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="108.204" y="107.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="108.204" y="104.521" size="1.778" layer="96"/>
+</instance>
+<instance part="C203" gate="G$1" x="104.14" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="103.124" y="129.921" size="1.778" layer="95"/>
+<attribute name="VALUE" x="103.124" y="127.381" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8389,14 +8399,14 @@ stuff'd strapping resistors.</text>
 <segment>
 <pinref part="U201" gate="G$1" pin="DTR"/>
 <wire x1="248.92" y1="127" x2="292.1" y2="127" width="0.1524" layer="91"/>
-<pinref part="C203" gate="G$1" pin="1"/>
+<pinref part="C205" gate="G$1" pin="1"/>
 <wire x1="292.1" y1="127" x2="299.72" y2="127" width="0.1524" layer="91"/>
 <label x="264.16" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_RESET" class="0">
 <segment>
-<pinref part="C203" gate="G$1" pin="2"/>
+<pinref part="C205" gate="G$1" pin="2"/>
 <wire x1="307.34" y1="127" x2="340.36" y2="127" width="0.1524" layer="91"/>
 <label x="327.66" y="127" size="1.778" layer="95"/>
 </segment>
