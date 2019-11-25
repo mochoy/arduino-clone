@@ -8172,6 +8172,41 @@ shorts.</text>
 <label x="320.04" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="CH340G_CTS" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="CTS"/>
+<wire x1="241.3" y1="106.68" x2="279.4" y2="106.68" width="0.1524" layer="91"/>
+<label x="256.54" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CH340G_DSR" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="DSR"/>
+<wire x1="241.3" y1="101.6" x2="279.4" y2="101.6" width="0.1524" layer="91"/>
+<label x="256.54" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CH340G_RI" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="RI"/>
+<wire x1="241.3" y1="96.52" x2="279.4" y2="96.52" width="0.1524" layer="91"/>
+<label x="256.54" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CH340G_DCD" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="DCD"/>
+<wire x1="241.3" y1="91.44" x2="279.4" y2="91.44" width="0.1524" layer="91"/>
+<label x="256.54" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CH340G_RTS" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="RTS"/>
+<wire x1="241.3" y1="81.28" x2="279.4" y2="81.28" width="0.1524" layer="91"/>
+<label x="256.54" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
