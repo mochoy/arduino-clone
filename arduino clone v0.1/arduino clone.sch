@@ -8007,18 +8007,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-2.5" y="-1.6"/>
 </polygon>
 </package>
-<package name="HC49US">
-<description>&lt;h3&gt;HC49/US 11.6x4.6mm PTH Crystal&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://www.digikey.com/Web%20Export/Supplier%20Content/Citizen_300/PDF/Citizen_HC49US.pdf?redirected=1"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-3.429" y1="-2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21"/>
-<wire x1="3.429" y1="2.286" x2="-3.429" y2="2.286" width="0.2032" layer="21"/>
-<wire x1="3.429" y1="2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21" curve="-180"/>
-<wire x1="-3.429" y1="2.286" x2="-3.429" y2="-2.286" width="0.2032" layer="21" curve="180"/>
-<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.651" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.651" rot="R90"/>
-<text x="0" y="2.54" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -8040,44 +8028,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CRYSTAL-16MHZ" prefix="Y" uservalue="yes">
-<description>&lt;h3&gt;16MHz Crystal&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.digikey.com/product-search/en?keywords=535-9122-1-ND"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 16MHz&lt;/li&gt;
-&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+<deviceset name="CRYSTAL-12MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;12.0MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 12.0MHz&lt;/li&gt;
 &lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
 &lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12640”&gt;Pro Micro -5V/16MHz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10097”&gt;SparkFun Serial Enabled LCD Kit&lt;/a&gt;&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12772”&gt;SparkFun Logomatic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9825”&gt;Pocket AVR Programmer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD-5X3.2" package="CRYSTAL-SMD-5X3.2-4PAD">
+<device name="&quot;" package="CRYSTAL-SMD-5X3.2-4PAD">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="XTAL-08218"/>
-<attribute name="SF_ID" value="COM-00094"/>
-<attribute name="VALUE" value="16MHz"/>
-</technology>
-</technologies>
-</device>
-<device name="PTH-HC49US" package="HC49US">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-08181"/>
-<attribute name="SF_ID" value="COM-00536"/>
-<attribute name="VALUE" value="16MHz"/>
+<attribute name="PROD_ID" value="XTAL-08297"/>
+<attribute name="VALUE" value="12MHz"/>
 </technology>
 </technologies>
 </device>
@@ -8138,18 +8110,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R211" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R212" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R213" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
-<part name="R207" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
-<attribute name="STUFF" value="NO STUFF"/>
-</part>
-<part name="R208" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
-<attribute name="STUFF" value="NO STUFF"/>
-</part>
-<part name="GND14" library="supply" deviceset="GND" device=""/>
 <part name="C204" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C203" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="GND15" library="supply" deviceset="GND" device=""/>
 <part name="GND16" library="supply" deviceset="GND" device=""/>
-<part name="Y201" library="SparkFun-Clocks" deviceset="CRYSTAL-16MHZ" device="SMD-5X3.2" value="16MHz"/>
+<part name="Y201" library="SparkFun-Clocks" deviceset="CRYSTAL-12MHZ" device="&quot;" value="12MHz"/>
 </parts>
 <sheets>
 <sheet>
@@ -8364,16 +8329,6 @@ CH340Gs leave CTS floating.</text>
 <wire x1="269.24" y1="48.26" x2="231.14" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="231.14" y1="48.26" x2="231.14" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="231.14" y1="86.36" x2="269.24" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
-<text x="55.88" y="50.8" size="1.778" layer="97">Pull this line high to enable auxilary RS232. 
-Has internal pull-down. Reference 
-schematics I've seen leave this pin floating,
-so I left it floating in this design. Pin can be 
-configured however using external no-
-stuff'd strapping resistors.</text>
-<wire x1="147.32" y1="86.36" x2="147.32" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="147.32" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="53.34" y1="25.4" x2="53.34" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="53.34" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -8453,19 +8408,6 @@ stuff'd strapping resistors.</text>
 <attribute name="NAME" x="311.15" y="49.7586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="47.498" size="1.778" layer="96"/>
 </instance>
-<instance part="R207" gate="G$1" x="127" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.81" y="70.0786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.81" y="67.818" size="1.778" layer="96"/>
-<attribute name="STUFF" x="129.54" y="63.5" size="1.778" layer="96"/>
-</instance>
-<instance part="R208" gate="G$1" x="127" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.81" y="44.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.81" y="42.418" size="1.778" layer="96"/>
-<attribute name="STUFF" x="129.54" y="38.1" size="1.778" layer="96"/>
-</instance>
-<instance part="GND14" gate="1" x="127" y="30.48" smashed="yes">
-<attribute name="VALUE" x="124.7775" y="27.94" size="1.778" layer="96"/>
-</instance>
 <instance part="C204" gate="G$1" x="106.68" y="116.84" smashed="yes">
 <attribute name="NAME" x="110.744" y="114.681" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.744" y="117.221" size="1.778" layer="96"/>
@@ -8495,13 +8437,6 @@ stuff'd strapping resistors.</text>
 <wire x1="198.12" y1="238.76" x2="167.64" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="233.68" x2="198.12" y2="238.76" width="0.1524" layer="91"/>
 <junction x="198.12" y="238.76"/>
-</segment>
-<segment>
-<pinref part="R207" gate="G$1" pin="2"/>
-<wire x1="127" y1="76.2" x2="127" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="127" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
-<label x="106.68" y="81.28" size="1.778" layer="95"/>
-<wire x1="109.22" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8546,11 +8481,6 @@ stuff'd strapping resistors.</text>
 <wire x1="251.46" y1="76.2" x2="256.54" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="251.46" y1="73.66" x2="251.46" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="R208" gate="G$1" pin="1"/>
-<wire x1="127" y1="33.02" x2="127" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
@@ -8818,19 +8748,7 @@ stuff'd strapping resistors.</text>
 <segment>
 <pinref part="U201" gate="G$1" pin="R232"/>
 <wire x1="182.88" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="121.92" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
 <label x="160.02" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R208" gate="G$1" pin="2"/>
-<pinref part="R207" gate="G$1" pin="1"/>
-<wire x1="127" y1="50.8" x2="127" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="127" y1="58.42" x2="127" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="127" y1="58.42" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="58.42" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
-<junction x="127" y="58.42"/>
 </segment>
 </net>
 <net name="CH340G_XIN" class="0">
