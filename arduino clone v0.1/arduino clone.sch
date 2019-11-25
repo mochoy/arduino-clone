@@ -8038,11 +8038,14 @@ W = angled&lt;p&gt;
 <wire x1="78.74" y1="220.98" x2="78.74" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="78.74" y1="180.34" x2="20.32" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="20.32" y1="180.34" x2="20.32" y2="220.98" width="0.1524" layer="97" style="shortdash"/>
-<text x="22.86" y="195.58" size="1.778" layer="97">Strap these resistors 
+<text x="22.86" y="190.5" size="1.778" layer="97">Strap these resistors 
 to configure USB mode 
 (host or device). For 
 more info, look up "USB 
-OTG".</text>
+OTG". The designs that 
+I saw left this line floating,
+so I assigned both resistors
+to NO STUFF.</text>
 <wire x1="101.6" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="152.4" y1="200.66" x2="152.4" y2="147.32" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="152.4" y1="147.32" x2="101.6" y2="147.32" width="0.1524" layer="97" style="shortdash"/>
