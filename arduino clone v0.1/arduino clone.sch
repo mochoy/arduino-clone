@@ -8805,7 +8805,7 @@ stuff'd strapping resistors.</text>
 <junction x="127" y="58.42"/>
 </segment>
 </net>
-<net name="CH340G_XIN" class="0">
+<net name="CH340G_XTAL_IN" class="0">
 <segment>
 <pinref part="C203" gate="G$1" pin="1"/>
 <pinref part="U201" gate="G$1" pin="XTAL_I"/>
@@ -8818,7 +8818,7 @@ stuff'd strapping resistors.</text>
 <junction x="86.36" y="129.54"/>
 </segment>
 </net>
-<net name="CH340G_XO" class="0">
+<net name="CH340G_XTAL_O" class="0">
 <segment>
 <pinref part="C204" gate="G$1" pin="1"/>
 <pinref part="U201" gate="G$1" pin="XTAL_O"/>
