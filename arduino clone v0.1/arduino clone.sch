@@ -8343,7 +8343,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="104.14" y1="144.78" x2="104.14" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U101" gate="U$1" pin="AREF"/>
 <wire x1="104.14" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
-<label x="152.4" y="147.32" size="1.778" layer="95"/>
+<label x="147.32" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_RX" class="0">
@@ -8362,7 +8362,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="241.3" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="MCU_XTAL_IN" class="0">
 <segment>
 <pinref part="C105" gate="G$1" pin="1"/>
 <pinref part="Y101" gate="G$1" pin="1"/>
@@ -8372,9 +8372,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="119.38" y1="124.46" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
 <junction x="119.38" y="124.46"/>
+<label x="147.32" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="MCU_XTAL_OUT" class="0">
 <segment>
 <pinref part="Y101" gate="G$1" pin="2"/>
 <pinref part="C106" gate="G$1" pin="1"/>
@@ -8384,6 +8385,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="144.78" y="124.46"/>
 <pinref part="U101" gate="U$1" pin="PB7(XTAL2/TOSC2)"/>
 <wire x1="144.78" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
+<label x="147.32" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
