@@ -8007,6 +8007,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-2.5" y="-1.6"/>
 </polygon>
 </package>
+<package name="HC49US">
+<description>&lt;h3&gt;HC49/US 11.6x4.6mm PTH Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.digikey.com/Web%20Export/Supplier%20Content/Citizen_300/PDF/Citizen_HC49US.pdf?redirected=1"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-3.429" y1="-2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21"/>
+<wire x1="3.429" y1="2.286" x2="-3.429" y2="2.286" width="0.2032" layer="21"/>
+<wire x1="3.429" y1="2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-3.429" y1="2.286" x2="-3.429" y2="-2.286" width="0.2032" layer="21" curve="180"/>
+<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.651" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.651" rot="R90"/>
+<text x="0" y="2.54" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -8050,6 +8062,49 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="XTAL-08297"/>
 <attribute name="VALUE" value="12MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-16MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;16MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-search/en?keywords=535-9122-1-ND"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 16MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12640”&gt;Pro Micro -5V/16MHz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10097”&gt;SparkFun Serial Enabled LCD Kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-5X3.2" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08218"/>
+<attribute name="SF_ID" value="COM-00094"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH-HC49US" package="HC49US">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08181"/>
+<attribute name="SF_ID" value="COM-00536"/>
+<attribute name="VALUE" value="16MHz"/>
 </technology>
 </technologies>
 </device>
@@ -8122,6 +8177,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND15" library="supply" deviceset="GND" device=""/>
 <part name="GND16" library="supply" deviceset="GND" device=""/>
 <part name="Y2" library="SparkFun-Clocks" deviceset="CRYSTAL-12MHZ" device="&quot;" value="12MHz"/>
+<part name="Y101" library="SparkFun-Clocks" deviceset="CRYSTAL-16MHZ" device="SMD-5X3.2" value="16MHz"/>
+<part name="C105" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
+<part name="C106" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
+<part name="GND17" library="supply" deviceset="GND" device=""/>
+<part name="GND18" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8154,13 +8214,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="148.59" y="176.7586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="148.59" y="174.498" size="1.778" layer="96"/>
 </instance>
-<instance part="C104" gate="G$1" x="142.24" y="142.24"/>
-<instance part="GND5" gate="1" x="142.24" y="132.08" smashed="yes">
-<attribute name="VALUE" x="140.0175" y="129.54" size="1.778" layer="96"/>
+<instance part="C104" gate="G$1" x="104.14" y="142.24"/>
+<instance part="GND5" gate="1" x="104.14" y="132.08" smashed="yes">
+<attribute name="VALUE" x="101.9175" y="129.54" size="1.778" layer="96"/>
 </instance>
 <instance part="S101" gate="G$1" x="124.46" y="162.56"/>
 <instance part="GND6" gate="1" x="109.22" y="152.4" smashed="yes">
 <attribute name="VALUE" x="106.9975" y="149.86" size="1.778" layer="96"/>
+</instance>
+<instance part="Y101" gate="G$1" x="132.08" y="124.46"/>
+<instance part="C105" gate="G$1" x="119.38" y="111.76"/>
+<instance part="C106" gate="G$1" x="144.78" y="111.76"/>
+<instance part="GND17" gate="1" x="119.38" y="101.6" smashed="yes">
+<attribute name="VALUE" x="117.1575" y="99.06" size="1.778" layer="96"/>
+</instance>
+<instance part="GND18" gate="1" x="144.78" y="101.6" smashed="yes">
+<attribute name="VALUE" x="142.5575" y="99.06" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8236,7 +8305,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="C104" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="134.62" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="134.62" x2="104.14" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -8244,6 +8313,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="109.22" y1="162.56" x2="111.76" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="S101" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="162.56" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="C105" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="104.14" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND18" gate="1" pin="GND"/>
+<pinref part="C106" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="104.14" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCU_RESET" class="0">
@@ -8261,9 +8340,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="MCU_AREF" class="0">
 <segment>
 <pinref part="C104" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="144.78" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="144.78" x2="104.14" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U101" gate="U$1" pin="AREF"/>
-<wire x1="142.24" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
 <label x="152.4" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -8281,6 +8360,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="215.9" y1="137.16" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
 <label x="233.68" y="137.16" size="1.778" layer="95"/>
 <wire x1="241.3" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C105" gate="G$1" pin="1"/>
+<pinref part="Y101" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="114.3" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U101" gate="U$1" pin="PB6(XTAL1/TOSC1)"/>
+<wire x1="119.38" y1="124.46" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
+<junction x="119.38" y="124.46"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="Y101" gate="G$1" pin="2"/>
+<pinref part="C106" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="124.46" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="124.46" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
+<junction x="144.78" y="124.46"/>
+<pinref part="U101" gate="U$1" pin="PB7(XTAL2/TOSC2)"/>
+<wire x1="144.78" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
