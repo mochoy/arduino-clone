@@ -7365,7 +7365,7 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <pin name="D-" x="-33.02" y="5.08"/>
 <pin name="XI" x="-33.02" y="-10.16"/>
 <pin name="XO" x="-33.02" y="-15.24"/>
-<pin name="R232" x="-30.48" y="-30.48" length="middle" direction="in"/>
+<pin name="R232" x="-33.02" y="-30.48" direction="in"/>
 <pin name="CTS" x="33.02" y="-5.08" direction="in" rot="R180"/>
 <pin name="DSR" x="33.02" y="-10.16" direction="in" rot="R180"/>
 <pin name="RI" x="33.02" y="-15.24" direction="in" rot="R180"/>
@@ -7862,12 +7862,19 @@ W = angled&lt;p&gt;
 <part name="C203" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="J202" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1" value="FTDI Breakout Header"/>
 <part name="GND12" library="supply" deviceset="GND" device=""/>
-<part name="R208" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
-<part name="R207" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
-<part name="GND13" library="supply" deviceset="GND" device=""/>
-<part name="R209" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R210" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R209" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="GND13" library="supply" deviceset="GND" device=""/>
 <part name="R211" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R212" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R213" library="adafruit" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R207" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="STUFF" value="NO STUFF"/>
+</part>
+<part name="R208" library="adafruit" deviceset="R-US_" device="R0805" value="10k">
+<attribute name="STUFF" value="NO STUFF"/>
+</part>
+<part name="GND14" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8034,11 +8041,11 @@ W = angled&lt;p&gt;
 <sheet>
 <plain>
 <text x="25.4" y="238.76" size="5.08" layer="97">USB to UART</text>
-<wire x1="20.32" y1="220.98" x2="78.74" y2="220.98" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="78.74" y1="220.98" x2="78.74" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="20.32" y1="226.06" x2="78.74" y2="226.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="78.74" y1="226.06" x2="78.74" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="78.74" y1="180.34" x2="20.32" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="20.32" y1="180.34" x2="20.32" y2="220.98" width="0.1524" layer="97" style="shortdash"/>
-<text x="22.86" y="190.5" size="1.778" layer="97">Strap these resistors 
+<wire x1="20.32" y1="180.34" x2="20.32" y2="226.06" width="0.1524" layer="97" style="shortdash"/>
+<text x="22.86" y="193.04" size="1.778" layer="97">Strap these resistors 
 to configure USB mode 
 (host or device). For 
 more info, look up "USB 
@@ -8101,10 +8108,10 @@ CH340Gs leave CTS floating.</text>
 <instance part="GND10" gate="1" x="30.48" y="160.02" smashed="yes">
 <attribute name="VALUE" x="28.2575" y="157.48" size="1.778" layer="96"/>
 </instance>
-<instance part="R201" gate="G$1" x="60.96" y="213.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="64.77" y="212.3186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="64.77" y="210.058" size="1.778" layer="96"/>
-<attribute name="STUFF" x="63.5" y="205.74" size="1.778" layer="96"/>
+<instance part="R201" gate="G$1" x="60.96" y="218.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.77" y="217.3986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="215.138" size="1.778" layer="96"/>
+<attribute name="STUFF" x="63.5" y="210.82" size="1.778" layer="96"/>
 </instance>
 <instance part="R202" gate="G$1" x="60.96" y="187.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.77" y="189.4586" size="1.778" layer="95"/>
@@ -8138,28 +8145,41 @@ CH340Gs leave CTS floating.</text>
 <instance part="GND12" gate="1" x="337.82" y="88.9" smashed="yes">
 <attribute name="VALUE" x="335.5975" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="R208" gate="G$1" x="312.42" y="76.2" smashed="yes" rot="R180">
+<instance part="R210" gate="G$1" x="312.42" y="76.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="311.15" y="80.2386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="77.978" size="1.778" layer="96"/>
 </instance>
-<instance part="R207" gate="G$1" x="261.62" y="76.2" smashed="yes" rot="R180">
+<instance part="R209" gate="G$1" x="261.62" y="76.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="260.35" y="80.2386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="260.35" y="77.978" size="1.778" layer="96"/>
 </instance>
 <instance part="GND13" gate="1" x="251.46" y="71.12" smashed="yes">
 <attribute name="VALUE" x="249.2375" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="R209" gate="G$1" x="312.42" y="66.04" smashed="yes" rot="R180">
+<instance part="R211" gate="G$1" x="312.42" y="66.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="311.15" y="70.0786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="67.818" size="1.778" layer="96"/>
 </instance>
-<instance part="R210" gate="G$1" x="312.42" y="55.88" smashed="yes" rot="R180">
+<instance part="R212" gate="G$1" x="312.42" y="55.88" smashed="yes" rot="R180">
 <attribute name="NAME" x="311.15" y="59.9186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="57.658" size="1.778" layer="96"/>
 </instance>
-<instance part="R211" gate="G$1" x="312.42" y="45.72" smashed="yes" rot="R180">
+<instance part="R213" gate="G$1" x="312.42" y="45.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="311.15" y="49.7586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="47.498" size="1.778" layer="96"/>
+</instance>
+<instance part="R207" gate="G$1" x="134.62" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.43" y="72.6186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="138.43" y="70.358" size="1.778" layer="96"/>
+<attribute name="STUFF" x="137.16" y="66.04" size="1.778" layer="96"/>
+</instance>
+<instance part="R208" gate="G$1" x="134.62" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.43" y="47.2186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="138.43" y="44.958" size="1.778" layer="96"/>
+<attribute name="STUFF" x="137.16" y="40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="134.62" y="33.02" smashed="yes">
+<attribute name="VALUE" x="132.3975" y="30.48" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8175,6 +8195,13 @@ CH340Gs leave CTS floating.</text>
 <wire x1="198.12" y1="238.76" x2="167.64" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="233.68" x2="198.12" y2="238.76" width="0.1524" layer="91"/>
 <junction x="198.12" y="238.76"/>
+</segment>
+<segment>
+<pinref part="R207" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="78.74" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
+<label x="114.3" y="83.82" size="1.778" layer="95"/>
+<wire x1="116.84" y1="83.82" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8215,10 +8242,15 @@ CH340Gs leave CTS floating.</text>
 <wire x1="337.82" y1="91.44" x2="337.82" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R207" gate="G$1" pin="2"/>
+<pinref part="R209" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="76.2" x2="256.54" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="251.46" y1="73.66" x2="251.46" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="R208" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="35.56" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PP3V3_CH340G" class="0">
@@ -8255,7 +8287,7 @@ CH340Gs leave CTS floating.</text>
 <wire x1="73.66" y1="165.1" x2="88.9" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="R202" gate="G$1" pin="2"/>
 <pinref part="R201" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="200.66" x2="60.96" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="200.66" x2="60.96" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="200.66" x2="60.96" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="200.66" x2="88.9" y2="200.66" width="0.1524" layer="91"/>
 <junction x="60.96" y="200.66"/>
@@ -8268,12 +8300,6 @@ CH340Gs leave CTS floating.</text>
 </net>
 <net name="PP5V0_USB" class="0">
 <segment>
-<pinref part="R201" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="218.44" x2="60.96" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="226.06" x2="86.36" y2="226.06" width="0.1524" layer="91"/>
-<label x="73.66" y="226.06" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
 <wire x1="20.32" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
 <label x="30.48" y="139.7" size="1.778" layer="95"/>
@@ -8282,6 +8308,13 @@ CH340Gs leave CTS floating.</text>
 <pinref part="J202" gate="1" pin="3"/>
 <wire x1="365.76" y1="60.96" x2="342.9" y2="60.96" width="0.1524" layer="91"/>
 <label x="342.9" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R201" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="223.52" x2="60.96" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="228.6" x2="63.5" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="228.6" x2="78.74" y2="228.6" width="0.1524" layer="91"/>
+<label x="66.04" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P_CH340G_D+" class="0">
@@ -8358,7 +8391,7 @@ CH340Gs leave CTS floating.</text>
 <label x="327.66" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R211" gate="G$1" pin="2"/>
+<pinref part="R213" gate="G$1" pin="2"/>
 <wire x1="307.34" y1="45.72" x2="276.86" y2="45.72" width="0.1524" layer="91"/>
 <label x="276.86" y="45.72" size="1.778" layer="95"/>
 </segment>
@@ -8370,8 +8403,8 @@ CH340Gs leave CTS floating.</text>
 <label x="264.16" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R207" gate="G$1" pin="1"/>
-<pinref part="R208" gate="G$1" pin="2"/>
+<pinref part="R209" gate="G$1" pin="1"/>
+<pinref part="R210" gate="G$1" pin="2"/>
 <wire x1="266.7" y1="76.2" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
 <label x="276.86" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -8409,14 +8442,14 @@ CH340Gs leave CTS floating.</text>
 <pinref part="J202" gate="1" pin="4"/>
 <wire x1="365.76" y1="58.42" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
 <label x="342.9" y="58.42" size="1.778" layer="95"/>
-<pinref part="R209" gate="G$1" pin="1"/>
+<pinref part="R211" gate="G$1" pin="1"/>
 <wire x1="317.5" y1="66.04" x2="335.28" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="66.04" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FTDI_CTS" class="0">
 <segment>
-<pinref part="R208" gate="G$1" pin="1"/>
+<pinref part="R210" gate="G$1" pin="1"/>
 <wire x1="317.5" y1="76.2" x2="337.82" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="76.2" x2="337.82" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="J202" gate="1" pin="2"/>
@@ -8426,7 +8459,7 @@ CH340Gs leave CTS floating.</text>
 </net>
 <net name="MCU_RX" class="0">
 <segment>
-<pinref part="R209" gate="G$1" pin="2"/>
+<pinref part="R211" gate="G$1" pin="2"/>
 <wire x1="307.34" y1="66.04" x2="276.86" y2="66.04" width="0.1524" layer="91"/>
 <label x="276.86" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -8440,7 +8473,7 @@ CH340Gs leave CTS floating.</text>
 </net>
 <net name="FDTI_TX" class="0">
 <segment>
-<pinref part="R210" gate="G$1" pin="1"/>
+<pinref part="R212" gate="G$1" pin="1"/>
 <pinref part="J202" gate="1" pin="5"/>
 <wire x1="317.5" y1="55.88" x2="365.76" y2="55.88" width="0.1524" layer="91"/>
 <label x="342.9" y="55.88" size="1.778" layer="95"/>
@@ -8448,7 +8481,7 @@ CH340Gs leave CTS floating.</text>
 </net>
 <net name="MCU_TX" class="0">
 <segment>
-<pinref part="R210" gate="G$1" pin="2"/>
+<pinref part="R212" gate="G$1" pin="2"/>
 <wire x1="307.34" y1="55.88" x2="276.86" y2="55.88" width="0.1524" layer="91"/>
 <label x="276.86" y="55.88" size="1.778" layer="95"/>
 </segment>
@@ -8462,13 +8495,32 @@ CH340Gs leave CTS floating.</text>
 </net>
 <net name="FDTI_DTR" class="0">
 <segment>
-<pinref part="R211" gate="G$1" pin="1"/>
+<pinref part="R213" gate="G$1" pin="1"/>
 <wire x1="317.5" y1="45.72" x2="335.28" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="45.72" x2="335.28" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="50.8" x2="335.28" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="J202" gate="1" pin="6"/>
 <wire x1="335.28" y1="53.34" x2="365.76" y2="53.34" width="0.1524" layer="91"/>
 <label x="342.9" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CH340G_R232" class="0">
+<segment>
+<pinref part="U201" gate="G$1" pin="R232"/>
+<wire x1="182.88" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="121.92" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<label x="160.02" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R208" gate="G$1" pin="2"/>
+<pinref part="R207" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="53.34" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="60.96" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="60.96" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<junction x="134.62" y="60.96"/>
 </segment>
 </net>
 </nets>
