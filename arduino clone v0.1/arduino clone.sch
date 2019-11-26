@@ -9099,7 +9099,7 @@ stuff'd strapping resistors.</text>
 <label x="269.24" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MCU_TX_R" class="0">
+<net name="MCU_TX" class="0">
 <segment>
 <pinref part="R206" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="154.94" x2="327.66" y2="154.94" width="0.1524" layer="91"/>
