@@ -8356,16 +8356,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="144.78" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MCU_RX" class="0">
-<segment>
-<pinref part="U101" gate="U$1" pin="PD0(RXD)"/>
-<wire x1="215.9" y1="139.7" x2="259.08" y2="139.7" width="0.1524" layer="91"/>
-<label x="236.22" y="139.7" size="1.778" layer="95"/>
-<wire x1="259.08" y1="139.7" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="R102" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="144.78" x2="266.7" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="MCU_TX" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD1(TXD)"/>
@@ -8530,20 +8520,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="215.9" y1="104.14" x2="246.38" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="MCU_RX_R" class="0">
 <segment>
 <pinref part="R102" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="144.78" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="144.78" x2="284.48" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="139.7" x2="314.96" y2="139.7" width="0.1524" layer="91"/>
+<label x="302.26" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="MCU_TX_R" class="0">
 <segment>
 <pinref part="R103" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="132.08" x2="284.48" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="132.08" x2="284.48" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="137.16" x2="314.96" y2="137.16" width="0.1524" layer="91"/>
+<label x="302.26" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_RX" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PD0(RXD)"/>
+<wire x1="215.9" y1="139.7" x2="259.08" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="139.7" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="R102" gate="G$1" pin="2"/>
+<wire x1="259.08" y1="144.78" x2="266.7" y2="144.78" width="0.1524" layer="91"/>
+<label x="236.22" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -8590,15 +8592,15 @@ nets easily.</text>
 <wire x1="327.66" y1="40.64" x2="299.72" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="299.72" y1="40.64" x2="299.72" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="299.72" y1="99.06" x2="327.66" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<text x="233.68" y="50.8" size="1.778" layer="97">I'm not sure if I'm supposed 
+<text x="220.98" y="35.56" size="1.778" layer="97">I'm not sure if I'm supposed 
 to tie CTS low. Arduino Pro 
 Mini shows CTS line tied low,
 but knockoff Nanos with 
 CH340Gs leave CTS floating.</text>
-<wire x1="269.24" y1="86.36" x2="269.24" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="269.24" y1="48.26" x2="231.14" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="231.14" y1="48.26" x2="231.14" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="231.14" y1="86.36" x2="269.24" y2="86.36" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="256.54" y1="71.12" x2="256.54" y2="33.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="256.54" y1="33.02" x2="218.44" y2="33.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="218.44" y1="33.02" x2="218.44" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="218.44" y1="71.12" x2="256.54" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="55.88" y="50.8" size="1.778" layer="97">Pull this line high to enable auxilary RS232. 
 Has internal pull-down. Reference 
 schematics I've seen leave this pin floating,
@@ -8669,12 +8671,12 @@ stuff'd strapping resistors.</text>
 <attribute name="NAME" x="311.15" y="80.2386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="77.978" size="1.778" layer="96"/>
 </instance>
-<instance part="R209" gate="G$1" x="261.62" y="76.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="260.35" y="80.2386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="260.35" y="77.978" size="1.778" layer="96"/>
+<instance part="R209" gate="G$1" x="248.92" y="60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="247.65" y="64.9986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.65" y="62.738" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="251.46" y="71.12" smashed="yes">
-<attribute name="VALUE" x="249.2375" y="68.58" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="238.76" y="55.88" smashed="yes">
+<attribute name="VALUE" x="236.5375" y="53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="R211" gate="G$1" x="312.42" y="66.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="311.15" y="70.0786" size="1.778" layer="95"/>
@@ -8778,9 +8780,9 @@ stuff'd strapping resistors.</text>
 </segment>
 <segment>
 <pinref part="R209" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="76.2" x2="256.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="60.96" x2="243.84" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="251.46" y1="73.66" x2="251.46" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="58.42" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -8937,8 +8939,10 @@ stuff'd strapping resistors.</text>
 </segment>
 <segment>
 <pinref part="R213" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="45.72" x2="276.86" y2="45.72" width="0.1524" layer="91"/>
-<label x="276.86" y="45.72" size="1.778" layer="95"/>
+<wire x1="307.34" y1="45.72" x2="297.18" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="45.72" x2="297.18" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="53.34" x2="269.24" y2="53.34" width="0.1524" layer="91"/>
+<label x="269.24" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH340G_CTS" class="0">
@@ -8950,8 +8954,10 @@ stuff'd strapping resistors.</text>
 <segment>
 <pinref part="R209" gate="G$1" pin="1"/>
 <pinref part="R210" gate="G$1" pin="2"/>
-<wire x1="266.7" y1="76.2" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
-<label x="276.86" y="76.2" size="1.778" layer="95"/>
+<wire x1="254" y1="60.96" x2="294.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="60.96" x2="294.64" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="76.2" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
+<label x="269.24" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH340G_DSR" class="0">
@@ -9076,8 +9082,10 @@ stuff'd strapping resistors.</text>
 </segment>
 <segment>
 <pinref part="R211" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="66.04" x2="276.86" y2="66.04" width="0.1524" layer="91"/>
-<label x="276.86" y="66.04" size="1.778" layer="95"/>
+<wire x1="307.34" y1="66.04" x2="297.18" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="66.04" x2="297.18" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="58.42" x2="269.24" y2="58.42" width="0.1524" layer="91"/>
+<label x="269.24" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_TX_R" class="0">
@@ -9090,8 +9098,8 @@ stuff'd strapping resistors.</text>
 </segment>
 <segment>
 <pinref part="R212" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="55.88" x2="276.86" y2="55.88" width="0.1524" layer="91"/>
-<label x="276.86" y="55.88" size="1.778" layer="95"/>
+<wire x1="307.34" y1="55.88" x2="269.24" y2="55.88" width="0.1524" layer="91"/>
+<label x="269.24" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
