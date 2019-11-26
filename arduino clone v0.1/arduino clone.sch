@@ -8494,40 +8494,46 @@ shorts if necessary</text>
 <label x="236.22" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="MCU_D8" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PB0(ICP)"/>
 <wire x1="215.9" y1="116.84" x2="246.38" y2="116.84" width="0.1524" layer="91"/>
+<label x="236.22" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="MCU_D9" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PB1(OC1A)"/>
 <wire x1="215.9" y1="114.3" x2="246.38" y2="114.3" width="0.1524" layer="91"/>
+<label x="236.22" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="MCU_D10" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PB2(SS/OC1B)"/>
 <wire x1="215.9" y1="111.76" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
+<label x="236.22" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="MCU_D11" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PB3(MOSI/OC2)"/>
 <wire x1="215.9" y1="109.22" x2="246.38" y2="109.22" width="0.1524" layer="91"/>
+<label x="236.22" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="MCU_D12" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PB4(MISO)"/>
 <wire x1="215.9" y1="106.68" x2="246.38" y2="106.68" width="0.1524" layer="91"/>
+<label x="236.22" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="MCU_D13" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PB5(SCK)"/>
 <wire x1="215.9" y1="104.14" x2="246.38" y2="104.14" width="0.1524" layer="91"/>
+<label x="236.22" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_RX" class="0">
