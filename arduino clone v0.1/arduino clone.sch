@@ -8459,40 +8459,39 @@ shorts if necessary</text>
 <label x="236.22" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="MCU_D2" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD2(INT0)"/>
 <wire x1="215.9" y1="134.62" x2="246.38" y2="134.62" width="0.1524" layer="91"/>
+<label x="236.22" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="MCU_D3" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD3(INT1)"/>
 <wire x1="215.9" y1="132.08" x2="246.38" y2="132.08" width="0.1524" layer="91"/>
+<label x="236.22" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="MCU_D4" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD4(XCK/T0)"/>
 <wire x1="215.9" y1="129.54" x2="246.38" y2="129.54" width="0.1524" layer="91"/>
+<label x="236.22" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="MCU_D5" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD5(T1)"/>
 <wire x1="215.9" y1="127" x2="246.38" y2="127" width="0.1524" layer="91"/>
+<label x="236.22" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U101" gate="U$1" pin="PD6(AIN0)"/>
-<wire x1="215.9" y1="124.46" x2="246.38" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
+<net name="MCU_D7" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD7(AIN1)"/>
 <wire x1="215.9" y1="121.92" x2="246.38" y2="121.92" width="0.1524" layer="91"/>
+<label x="236.22" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -8557,6 +8556,13 @@ shorts if necessary</text>
 <wire x1="294.64" y1="132.08" x2="294.64" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="137.16" x2="325.12" y2="137.16" width="0.1524" layer="91"/>
 <label x="314.96" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D6" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PD6(AIN0)"/>
+<wire x1="215.9" y1="124.46" x2="246.38" y2="124.46" width="0.1524" layer="91"/>
+<label x="236.22" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
