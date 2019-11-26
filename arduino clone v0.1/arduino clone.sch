@@ -8233,13 +8233,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND18" gate="1" x="137.16" y="101.6" smashed="yes">
 <attribute name="VALUE" x="134.9375" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="R102" gate="G$1" x="269.24" y="144.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="267.97" y="148.8186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="267.97" y="146.558" size="1.778" layer="96"/>
+<instance part="R102" gate="G$1" x="271.78" y="144.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="270.51" y="148.8186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="270.51" y="146.558" size="1.778" layer="96"/>
 </instance>
-<instance part="R103" gate="G$1" x="269.24" y="132.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="267.97" y="136.1186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="267.97" y="133.858" size="1.778" layer="96"/>
+<instance part="R103" gate="G$1" x="271.78" y="132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="270.51" y="136.1186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="270.51" y="133.858" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8363,7 +8363,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="236.22" y="139.7" size="1.778" layer="95"/>
 <wire x1="259.08" y1="139.7" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R102" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="144.78" x2="264.16" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="144.78" x2="266.7" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCU_TX" class="0">
@@ -8373,7 +8373,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="236.22" y="137.16" size="1.778" layer="95"/>
 <wire x1="259.08" y1="137.16" x2="259.08" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R103" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="132.08" x2="264.16" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="132.08" x2="266.7" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCU_XTAL_IN" class="0">
@@ -8533,17 +8533,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$14" class="0">
 <segment>
 <pinref part="R102" gate="G$1" pin="1"/>
-<wire x1="274.32" y1="144.78" x2="279.4" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="144.78" x2="279.4" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="139.7" x2="304.8" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="144.78" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="144.78" x2="284.48" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R103" gate="G$1" pin="1"/>
-<wire x1="274.32" y1="132.08" x2="279.4" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="132.08" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="137.16" x2="304.8" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="132.08" x2="284.48" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="132.08" x2="284.48" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -9002,40 +9002,12 @@ stuff'd strapping resistors.</text>
 <label x="342.9" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MCU_RX" class="0">
-<segment>
-<pinref part="R211" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="66.04" x2="276.86" y2="66.04" width="0.1524" layer="91"/>
-<label x="276.86" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R205" gate="G$1" pin="1"/>
-<wire x1="320.04" y1="165.1" x2="327.66" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="165.1" x2="327.66" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="162.56" x2="358.14" y2="162.56" width="0.1524" layer="91"/>
-<label x="350.52" y="162.56" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FDTI_TX" class="0">
 <segment>
 <pinref part="R212" gate="G$1" pin="1"/>
 <pinref part="J202" gate="1" pin="5"/>
 <wire x1="317.5" y1="55.88" x2="365.76" y2="55.88" width="0.1524" layer="91"/>
 <label x="342.9" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MCU_TX" class="0">
-<segment>
-<pinref part="R212" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="55.88" x2="276.86" y2="55.88" width="0.1524" layer="91"/>
-<label x="276.86" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R206" gate="G$1" pin="1"/>
-<wire x1="320.04" y1="154.94" x2="327.66" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="154.94" x2="327.66" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="157.48" x2="358.14" y2="157.48" width="0.1524" layer="91"/>
-<label x="350.52" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FDTI_DTR" class="0">
@@ -9092,6 +9064,34 @@ stuff'd strapping resistors.</text>
 <pinref part="Y2" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="129.54" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
 <junction x="106.68" y="129.54"/>
+</segment>
+</net>
+<net name="MCU_RX_R" class="0">
+<segment>
+<pinref part="R205" gate="G$1" pin="1"/>
+<wire x1="320.04" y1="165.1" x2="327.66" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="165.1" x2="327.66" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="162.56" x2="363.22" y2="162.56" width="0.1524" layer="91"/>
+<label x="350.52" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R211" gate="G$1" pin="2"/>
+<wire x1="307.34" y1="66.04" x2="276.86" y2="66.04" width="0.1524" layer="91"/>
+<label x="276.86" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_TX_R" class="0">
+<segment>
+<pinref part="R206" gate="G$1" pin="1"/>
+<wire x1="320.04" y1="154.94" x2="327.66" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="154.94" x2="327.66" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="157.48" x2="363.22" y2="157.48" width="0.1524" layer="91"/>
+<label x="350.52" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R212" gate="G$1" pin="2"/>
+<wire x1="307.34" y1="55.88" x2="276.86" y2="55.88" width="0.1524" layer="91"/>
+<label x="276.86" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
