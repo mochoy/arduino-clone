@@ -8667,10 +8667,6 @@ stuff'd strapping resistors.</text>
 <instance part="GND9" gate="1" x="233.68" y="220.98" smashed="yes">
 <attribute name="VALUE" x="231.4575" y="218.44" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="15.24" y="144.78" rot="MR0"/>
-<instance part="GND10" gate="1" x="30.48" y="160.02" smashed="yes">
-<attribute name="VALUE" x="28.2575" y="157.48" size="1.778" layer="96"/>
-</instance>
 <instance part="R201" gate="G$1" x="60.96" y="218.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.77" y="217.3986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.77" y="215.138" size="1.778" layer="96"/>
@@ -8799,14 +8795,6 @@ stuff'd strapping resistors.</text>
 <wire x1="233.68" y1="223.52" x2="233.68" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="20.32" y1="149.86" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="149.86" x2="25.4" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="25.4" y1="165.1" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="165.1" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="R202" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="177.8" x2="60.96" y2="182.88" width="0.1524" layer="91"/>
@@ -8860,12 +8848,6 @@ stuff'd strapping resistors.</text>
 <wire x1="111.76" y1="154.94" x2="121.92" y2="154.94" width="0.1524" layer="91"/>
 <label x="73.66" y="160.02" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="D-"/>
-<wire x1="20.32" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
-<label x="30.48" y="142.24" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="USB_ID" class="0">
 <segment>
@@ -8879,18 +8861,8 @@ stuff'd strapping resistors.</text>
 <wire x1="60.96" y1="200.66" x2="88.9" y2="200.66" width="0.1524" layer="91"/>
 <junction x="60.96" y="200.66"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="USBID"/>
-<wire x1="20.32" y1="147.32" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
-<label x="30.48" y="147.32" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="PP5V0_USB" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="VBUS"/>
-<wire x1="20.32" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
-<label x="30.48" y="139.7" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="J202" gate="1" pin="3"/>
 <wire x1="365.76" y1="60.96" x2="342.9" y2="60.96" width="0.1524" layer="91"/>
@@ -8933,11 +8905,6 @@ stuff'd strapping resistors.</text>
 <label x="73.66" y="162.56" size="1.778" layer="95"/>
 <wire x1="111.76" y1="162.56" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="162.56" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="D+"/>
-<wire x1="20.32" y1="144.78" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
-<label x="30.48" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH340G_RX" class="0">
@@ -9148,6 +9115,7 @@ stuff'd strapping resistors.</text>
 <sheet>
 <plain>
 <text x="27.94" y="238.76" size="5.08" layer="97">USB HEADERS, CONNECTORS, AND LEDS</text>
+<attribute name="VALUE" x="46.0375" y="160.02" size="1.778" layer="96"/>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes">
@@ -9155,10 +9123,51 @@ stuff'd strapping resistors.</text>
 <attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
 </instance>
+<instance part="J1" gate="G$1" x="33.02" y="147.32" rot="MR0"/>
+<instance part="GND10" gate="1" x="48.26" y="162.56" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="152.4" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="43.18" y1="167.64" x2="48.26" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="167.64" x2="48.26" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="P_USB_D-" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="D-"/>
+<wire x1="38.1" y1="144.78" x2="66.04" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="144.78" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
+<label x="48.26" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="USB_ID" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="USBID"/>
+<wire x1="38.1" y1="149.86" x2="68.58" y2="149.86" width="0.1524" layer="91"/>
+<label x="48.26" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PP5V0_USB" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="VBUS"/>
+<wire x1="38.1" y1="142.24" x2="68.58" y2="142.24" width="0.1524" layer="91"/>
+<label x="48.26" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="P_USB_D+" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="D+"/>
+<wire x1="38.1" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
+<label x="48.26" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
