@@ -8189,15 +8189,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="27.94" y="238.76" size="5.08" layer="97">MCU</text>
-<text x="246.38" y="198.12" size="1.778" layer="97">I'm not sure if I'm supposed 
-to tie CTS low. Arduino Pro 
-Mini shows CTS line tied low,
-but knockoff Nanos with 
-CH340Gs leave CTS floating.</text>
-<wire x1="307.34" y1="218.44" x2="307.34" y2="190.5" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="307.34" y1="190.5" x2="243.84" y2="190.5" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="243.84" y1="190.5" x2="243.84" y2="218.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="243.84" y1="218.44" x2="307.34" y2="218.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="269.24" y="154.94" size="1.778" layer="97">Arduino Nano and Uno 
+both have 1k series 
+resistors on UART path, 
+but not IO path. I'm not 
+sure what they're for but 
+they can be replaced with 
+shorts if necessary</text>
+<wire x1="302.26" y1="175.26" x2="302.26" y2="127" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="302.26" y1="127" x2="264.16" y2="127" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="264.16" y1="127" x2="264.16" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="264.16" y1="175.26" x2="302.26" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -8242,13 +8244,13 @@ CH340Gs leave CTS floating.</text>
 <instance part="GND18" gate="1" x="137.16" y="101.6" smashed="yes">
 <attribute name="VALUE" x="134.9375" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="R102" gate="G$1" x="271.78" y="144.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="270.51" y="148.8186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="270.51" y="146.558" size="1.778" layer="96"/>
+<instance part="R102" gate="G$1" x="281.94" y="144.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="280.67" y="148.8186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="146.558" size="1.778" layer="96"/>
 </instance>
-<instance part="R103" gate="G$1" x="271.78" y="132.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="270.51" y="136.1186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="270.51" y="133.858" size="1.778" layer="96"/>
+<instance part="R103" gate="G$1" x="281.94" y="132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="280.67" y="136.1186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="133.858" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8368,11 +8370,11 @@ CH340Gs leave CTS floating.</text>
 <net name="MCU_TX" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD1(TXD)"/>
-<wire x1="215.9" y1="137.16" x2="259.08" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="137.16" x2="269.24" y2="137.16" width="0.1524" layer="91"/>
 <label x="236.22" y="137.16" size="1.778" layer="95"/>
-<wire x1="259.08" y1="137.16" x2="259.08" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="137.16" x2="269.24" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R103" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="132.08" x2="266.7" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="132.08" x2="276.86" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCU_XTAL_IN" class="0">
@@ -8532,28 +8534,28 @@ CH340Gs leave CTS floating.</text>
 <net name="MCU_RX_R" class="0">
 <segment>
 <pinref part="R102" gate="G$1" pin="1"/>
-<wire x1="276.86" y1="144.78" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="144.78" x2="284.48" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="139.7" x2="314.96" y2="139.7" width="0.1524" layer="91"/>
-<label x="302.26" y="139.7" size="1.778" layer="95"/>
+<wire x1="287.02" y1="144.78" x2="294.64" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="144.78" x2="294.64" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="139.7" x2="325.12" y2="139.7" width="0.1524" layer="91"/>
+<label x="312.42" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_TX_R" class="0">
 <segment>
 <pinref part="R103" gate="G$1" pin="1"/>
-<wire x1="276.86" y1="132.08" x2="284.48" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="132.08" x2="284.48" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="137.16" x2="314.96" y2="137.16" width="0.1524" layer="91"/>
-<label x="302.26" y="137.16" size="1.778" layer="95"/>
+<wire x1="287.02" y1="132.08" x2="294.64" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="132.08" x2="294.64" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="137.16" x2="325.12" y2="137.16" width="0.1524" layer="91"/>
+<label x="312.42" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_RX" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD0(RXD)"/>
-<wire x1="215.9" y1="139.7" x2="259.08" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="139.7" x2="259.08" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="139.7" x2="269.24" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="139.7" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R102" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="144.78" x2="266.7" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="144.78" x2="276.86" y2="144.78" width="0.1524" layer="91"/>
 <label x="236.22" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
