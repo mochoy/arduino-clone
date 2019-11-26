@@ -8190,7 +8190,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="27.94" y="238.76" size="5.08" layer="97">MCU</text>
+<text x="27.94" y="238.76" size="5.08" layer="97">MCU AND POWER</text>
 <text x="281.94" y="149.86" size="1.778" layer="97">Arduino Nano and Uno 
 both have 1k series 
 resistors on UART path, 
