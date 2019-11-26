@@ -8189,6 +8189,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="27.94" y="238.76" size="5.08" layer="97">MCU</text>
+<text x="246.38" y="198.12" size="1.778" layer="97">I'm not sure if I'm supposed 
+to tie CTS low. Arduino Pro 
+Mini shows CTS line tied low,
+but knockoff Nanos with 
+CH340Gs leave CTS floating.</text>
+<wire x1="307.34" y1="218.44" x2="307.34" y2="190.5" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="307.34" y1="190.5" x2="243.84" y2="190.5" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="243.84" y1="190.5" x2="243.84" y2="218.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="243.84" y1="218.44" x2="307.34" y2="218.44" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -8592,15 +8601,15 @@ nets easily.</text>
 <wire x1="327.66" y1="40.64" x2="299.72" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="299.72" y1="40.64" x2="299.72" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="299.72" y1="99.06" x2="327.66" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<text x="195.58" y="43.18" size="1.778" layer="97">I'm not sure if I'm supposed 
+<text x="198.12" y="43.18" size="1.778" layer="97">I'm not sure if I'm supposed 
 to tie CTS low. Arduino Pro 
 Mini shows CTS line tied low,
 but knockoff Nanos with 
 CH340Gs leave CTS floating.</text>
 <wire x1="256.54" y1="63.5" x2="256.54" y2="35.56" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="256.54" y1="35.56" x2="193.04" y2="35.56" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="193.04" y1="35.56" x2="193.04" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="193.04" y1="63.5" x2="256.54" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="256.54" y1="35.56" x2="195.58" y2="35.56" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="195.58" y1="35.56" x2="195.58" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="195.58" y1="63.5" x2="256.54" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <text x="55.88" y="50.8" size="1.778" layer="97">Pull this line high to enable auxilary RS232. 
 Has internal pull-down. Reference 
 schematics I've seen leave this pin floating,
@@ -8672,8 +8681,8 @@ stuff'd strapping resistors.</text>
 <attribute name="VALUE" x="311.15" y="77.978" size="1.778" layer="96"/>
 </instance>
 <instance part="R209" gate="G$1" x="238.76" y="50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="234.7214" y="49.53" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="236.982" y="49.53" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="242.57" y="52.2986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="242.57" y="50.038" size="1.778" layer="96"/>
 </instance>
 <instance part="GND13" gate="1" x="238.76" y="40.64" smashed="yes">
 <attribute name="VALUE" x="236.5375" y="38.1" size="1.778" layer="96"/>
