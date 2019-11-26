@@ -8592,15 +8592,15 @@ nets easily.</text>
 <wire x1="327.66" y1="40.64" x2="299.72" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="299.72" y1="40.64" x2="299.72" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="299.72" y1="99.06" x2="327.66" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<text x="220.98" y="35.56" size="1.778" layer="97">I'm not sure if I'm supposed 
+<text x="195.58" y="43.18" size="1.778" layer="97">I'm not sure if I'm supposed 
 to tie CTS low. Arduino Pro 
 Mini shows CTS line tied low,
 but knockoff Nanos with 
 CH340Gs leave CTS floating.</text>
-<wire x1="256.54" y1="71.12" x2="256.54" y2="33.02" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="256.54" y1="33.02" x2="218.44" y2="33.02" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="218.44" y1="33.02" x2="218.44" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="218.44" y1="71.12" x2="256.54" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="256.54" y1="63.5" x2="256.54" y2="35.56" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="256.54" y1="35.56" x2="193.04" y2="35.56" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="193.04" y1="35.56" x2="193.04" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="193.04" y1="63.5" x2="256.54" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <text x="55.88" y="50.8" size="1.778" layer="97">Pull this line high to enable auxilary RS232. 
 Has internal pull-down. Reference 
 schematics I've seen leave this pin floating,
@@ -8671,12 +8671,12 @@ stuff'd strapping resistors.</text>
 <attribute name="NAME" x="311.15" y="80.2386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="311.15" y="77.978" size="1.778" layer="96"/>
 </instance>
-<instance part="R209" gate="G$1" x="248.92" y="60.96" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="64.9986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="247.65" y="62.738" size="1.778" layer="96"/>
+<instance part="R209" gate="G$1" x="238.76" y="50.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="234.7214" y="49.53" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="236.982" y="49.53" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND13" gate="1" x="238.76" y="55.88" smashed="yes">
-<attribute name="VALUE" x="236.5375" y="53.34" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="238.76" y="40.64" smashed="yes">
+<attribute name="VALUE" x="236.5375" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="R211" gate="G$1" x="312.42" y="66.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="311.15" y="70.0786" size="1.778" layer="95"/>
@@ -8779,12 +8779,6 @@ stuff'd strapping resistors.</text>
 <wire x1="337.82" y1="91.44" x2="337.82" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R209" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="60.96" x2="243.84" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="238.76" y1="58.42" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="R208" gate="G$1" pin="1"/>
 <wire x1="127" y1="33.02" x2="127" y2="40.64" width="0.1524" layer="91"/>
@@ -8798,6 +8792,11 @@ stuff'd strapping resistors.</text>
 <pinref part="GND16" gate="1" pin="GND"/>
 <pinref part="C204" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="109.22" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="R209" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="43.18" x2="238.76" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PP3V3_CH340G" class="0">
@@ -8954,7 +8953,8 @@ stuff'd strapping resistors.</text>
 <segment>
 <pinref part="R209" gate="G$1" pin="1"/>
 <pinref part="R210" gate="G$1" pin="2"/>
-<wire x1="254" y1="60.96" x2="294.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="55.88" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="60.96" x2="294.64" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="60.96" x2="294.64" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="76.2" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
 <label x="269.24" y="60.96" size="1.778" layer="95"/>
