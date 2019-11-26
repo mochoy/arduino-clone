@@ -10989,13 +10989,13 @@ CH340Gs leave CTS floating.</text>
 <attribute name="NAME" x="143.51" y="59.9186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="143.51" y="57.658" size="1.778" layer="96"/>
 </instance>
-<instance part="DS402" gate="G$1" x="203.2" y="81.28" smashed="yes">
-<attribute name="NAME" x="206.248" y="80.264" size="1.778" layer="95"/>
-<attribute name="VALUE" x="206.248" y="78.105" size="1.778" layer="96"/>
+<instance part="DS402" gate="G$1" x="213.36" y="81.28" smashed="yes">
+<attribute name="NAME" x="216.408" y="80.264" size="1.778" layer="95"/>
+<attribute name="VALUE" x="216.408" y="78.105" size="1.778" layer="96"/>
 </instance>
-<instance part="R407" gate="G$1" x="203.2" y="58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="207.01" y="59.9186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="207.01" y="57.658" size="1.778" layer="96"/>
+<instance part="R407" gate="G$1" x="213.36" y="58.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="217.17" y="59.9186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="217.17" y="57.658" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -11140,9 +11140,9 @@ CH340Gs leave CTS floating.</text>
 </segment>
 <segment>
 <pinref part="R407" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="53.34" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="45.72" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
-<label x="177.8" y="45.72" size="1.778" layer="95"/>
+<wire x1="213.36" y1="53.34" x2="213.36" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="45.72" x2="187.96" y2="45.72" width="0.1524" layer="91"/>
+<label x="187.96" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PP5V0_MCU" class="0">
@@ -11154,9 +11154,9 @@ CH340Gs leave CTS floating.</text>
 </segment>
 <segment>
 <pinref part="DS402" gate="G$1" pin="A"/>
-<wire x1="203.2" y1="83.82" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
-<label x="177.8" y="93.98" size="1.778" layer="95"/>
+<wire x1="213.36" y1="83.82" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
+<label x="187.96" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_DS401" class="1">
@@ -11171,8 +11171,8 @@ CH340Gs leave CTS floating.</text>
 <segment>
 <pinref part="R407" gate="G$1" pin="2"/>
 <pinref part="DS402" gate="G$1" pin="C"/>
-<wire x1="203.2" y1="63.5" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
-<label x="187.96" y="68.58" size="1.778" layer="95"/>
+<wire x1="213.36" y1="63.5" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
+<label x="198.12" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
