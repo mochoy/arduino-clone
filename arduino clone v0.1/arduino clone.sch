@@ -8349,17 +8349,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="MCU_RX" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD0(RXD)"/>
-<wire x1="215.9" y1="139.7" x2="241.3" y2="139.7" width="0.1524" layer="91"/>
-<label x="233.68" y="139.7" size="1.778" layer="95"/>
-<wire x1="241.3" y1="139.7" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="139.7" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
+<label x="236.22" y="139.7" size="1.778" layer="95"/>
+<wire x1="243.84" y1="139.7" x2="246.38" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCU_TX" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD1(TXD)"/>
-<wire x1="215.9" y1="137.16" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
-<label x="233.68" y="137.16" size="1.778" layer="95"/>
-<wire x1="241.3" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
+<label x="236.22" y="137.16" size="1.778" layer="95"/>
+<wire x1="243.84" y1="137.16" x2="246.38" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCU_XTAL_IN" class="0">
@@ -8386,6 +8386,62 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U101" gate="U$1" pin="PB7(XTAL2/TOSC2)"/>
 <wire x1="137.16" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
 <label x="144.78" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_A0" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PC0(ADC0)"/>
+<wire x1="215.9" y1="162.56" x2="246.38" y2="162.56" width="0.1524" layer="91"/>
+<label x="236.22" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_A1" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PC1(ADC1)"/>
+<wire x1="215.9" y1="160.02" x2="246.38" y2="160.02" width="0.1524" layer="91"/>
+<label x="236.22" y="160.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_A2" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PC2(ADC2)"/>
+<wire x1="215.9" y1="157.48" x2="246.38" y2="157.48" width="0.1524" layer="91"/>
+<label x="236.22" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_A5" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PC5(ADC5/SCL)"/>
+<wire x1="215.9" y1="149.86" x2="246.38" y2="149.86" width="0.1524" layer="91"/>
+<label x="236.22" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_A6" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="ADC6"/>
+<wire x1="215.9" y1="147.32" x2="246.38" y2="147.32" width="0.1524" layer="91"/>
+<label x="236.22" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_A7" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="ADC7"/>
+<wire x1="215.9" y1="144.78" x2="246.38" y2="144.78" width="0.1524" layer="91"/>
+<label x="236.22" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_A4" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PC4(ADC4/SDA)"/>
+<wire x1="215.9" y1="152.4" x2="246.38" y2="152.4" width="0.1524" layer="91"/>
+<label x="236.22" y="152.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_A3" class="0">
+<segment>
+<pinref part="U101" gate="U$1" pin="PC3(ADC3)"/>
+<wire x1="215.9" y1="154.94" x2="246.38" y2="154.94" width="0.1524" layer="91"/>
+<label x="236.22" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
