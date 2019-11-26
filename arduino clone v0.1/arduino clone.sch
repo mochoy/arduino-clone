@@ -9744,6 +9744,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND35" library="supply" deviceset="GND" device=""/>
 <part name="DS202" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="LTST-C171GKT"/>
 <part name="R202" library="adafruit" deviceset="R-US_" device="M0805" value="270"/>
+<part name="GND22" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10197,16 +10198,16 @@ shorts if necessary</text>
 <instance part="GND21" gate="1" x="284.48" y="172.72" smashed="yes">
 <attribute name="VALUE" x="282.2575" y="170.18" size="1.778" layer="96"/>
 </instance>
-<instance part="DS201" gate="G$1" x="109.22" y="96.52" smashed="yes">
-<attribute name="NAME" x="112.268" y="95.504" size="1.778" layer="95"/>
-<attribute name="VALUE" x="112.268" y="93.345" size="1.778" layer="96"/>
+<instance part="DS201" gate="G$1" x="119.38" y="96.52" smashed="yes">
+<attribute name="NAME" x="122.428" y="95.504" size="1.778" layer="95"/>
+<attribute name="VALUE" x="122.428" y="93.345" size="1.778" layer="96"/>
 </instance>
-<instance part="R201" gate="G$1" x="109.22" y="73.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="113.03" y="75.1586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="72.898" size="1.778" layer="96"/>
+<instance part="R201" gate="G$1" x="119.38" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="123.19" y="75.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="123.19" y="72.898" size="1.778" layer="96"/>
 </instance>
-<instance part="GND35" gate="1" x="109.22" y="58.42" smashed="yes">
-<attribute name="VALUE" x="106.9975" y="55.88" size="1.778" layer="96"/>
+<instance part="GND35" gate="1" x="119.38" y="58.42" smashed="yes">
+<attribute name="VALUE" x="117.1575" y="55.88" size="1.778" layer="96"/>
 </instance>
 <instance part="DS202" gate="G$1" x="187.96" y="96.52" smashed="yes">
 <attribute name="NAME" x="191.008" y="95.504" size="1.778" layer="95"/>
@@ -10215,6 +10216,9 @@ shorts if necessary</text>
 <instance part="R202" gate="G$1" x="187.96" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="191.77" y="75.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="191.77" y="72.898" size="1.778" layer="96"/>
+</instance>
+<instance part="GND22" gate="1" x="187.96" y="58.42" smashed="yes">
+<attribute name="VALUE" x="185.7375" y="55.88" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10421,10 +10425,10 @@ shorts if necessary</text>
 <label x="241.3" y="182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R202" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="68.58" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="55.88" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
-<label x="205.74" y="55.88" size="1.778" layer="95"/>
+<pinref part="DS202" gate="G$1" pin="A"/>
+<wire x1="187.96" y1="99.06" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="109.22" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
+<label x="165.1" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_D1" class="0">
@@ -10475,7 +10479,12 @@ shorts if necessary</text>
 <segment>
 <pinref part="R201" gate="G$1" pin="1"/>
 <pinref part="GND35" gate="1" pin="GND"/>
-<wire x1="109.22" y1="68.58" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="68.58" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND22" gate="1" pin="GND"/>
+<pinref part="R202" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="60.96" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MCU_D14" class="0">
@@ -10489,22 +10498,16 @@ shorts if necessary</text>
 <segment>
 <pinref part="R201" gate="G$1" pin="2"/>
 <pinref part="DS201" gate="G$1" pin="C"/>
-<wire x1="109.22" y1="78.74" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
-<label x="93.98" y="83.82" size="1.778" layer="95"/>
+<wire x1="119.38" y1="78.74" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
+<label x="104.14" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PP5V0_MCU" class="0">
 <segment>
 <pinref part="DS201" gate="G$1" pin="A"/>
-<wire x1="109.22" y1="99.06" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
-<label x="83.82" y="109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DS202" gate="G$1" pin="A"/>
-<wire x1="187.96" y1="99.06" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
-<label x="162.56" y="109.22" size="1.778" layer="95"/>
+<wire x1="119.38" y1="99.06" x2="119.38" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="109.22" x2="93.98" y2="109.22" width="0.1524" layer="91"/>
+<label x="93.98" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_DS202" class="1">
