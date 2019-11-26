@@ -9740,8 +9740,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND20" library="supply" deviceset="GND" device=""/>
 <part name="GND21" library="supply" deviceset="GND" device=""/>
 <part name="DS201" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="LTST-C171GKT"/>
-<part name="R1" library="adafruit" deviceset="R-US_" device="M0805" value="270"/>
+<part name="R201" library="adafruit" deviceset="R-US_" device="M0805" value="270"/>
 <part name="GND35" library="supply" deviceset="GND" device=""/>
+<part name="DS202" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="LTST-C171GKT"/>
+<part name="R202" library="adafruit" deviceset="R-US_" device="M0805" value="270"/>
 </parts>
 <sheets>
 <sheet>
@@ -10199,12 +10201,20 @@ shorts if necessary</text>
 <attribute name="NAME" x="112.268" y="95.504" size="1.778" layer="95"/>
 <attribute name="VALUE" x="112.268" y="93.345" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="109.22" y="73.66" smashed="yes" rot="R90">
+<instance part="R201" gate="G$1" x="109.22" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="113.03" y="75.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="113.03" y="72.898" size="1.778" layer="96"/>
 </instance>
 <instance part="GND35" gate="1" x="109.22" y="58.42" smashed="yes">
 <attribute name="VALUE" x="106.9975" y="55.88" size="1.778" layer="96"/>
+</instance>
+<instance part="DS202" gate="G$1" x="187.96" y="96.52" smashed="yes">
+<attribute name="NAME" x="191.008" y="95.504" size="1.778" layer="95"/>
+<attribute name="VALUE" x="191.008" y="93.345" size="1.778" layer="96"/>
+</instance>
+<instance part="R202" gate="G$1" x="187.96" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="191.77" y="75.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="191.77" y="72.898" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10410,6 +10420,12 @@ shorts if necessary</text>
 <wire x1="264.16" y1="182.88" x2="241.3" y2="182.88" width="0.1524" layer="91"/>
 <label x="241.3" y="182.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R202" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="68.58" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="55.88" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
+<label x="205.74" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MCU_D1" class="0">
 <segment>
@@ -10457,7 +10473,7 @@ shorts if necessary</text>
 <wire x1="284.48" y1="180.34" x2="279.4" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R201" gate="G$1" pin="1"/>
 <pinref part="GND35" gate="1" pin="GND"/>
 <wire x1="109.22" y1="68.58" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 </segment>
@@ -10471,7 +10487,7 @@ shorts if necessary</text>
 </net>
 <net name="LED_DS201" class="1">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R201" gate="G$1" pin="2"/>
 <pinref part="DS201" gate="G$1" pin="C"/>
 <wire x1="109.22" y1="78.74" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
 <label x="93.98" y="83.82" size="1.778" layer="95"/>
@@ -10483,6 +10499,20 @@ shorts if necessary</text>
 <wire x1="109.22" y1="99.06" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
 <label x="83.82" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DS202" gate="G$1" pin="A"/>
+<wire x1="187.96" y1="99.06" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
+<label x="162.56" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_DS202" class="1">
+<segment>
+<pinref part="R202" gate="G$1" pin="2"/>
+<pinref part="DS202" gate="G$1" pin="C"/>
+<wire x1="187.96" y1="78.74" x2="187.96" y2="91.44" width="0.1524" layer="91"/>
+<label x="172.72" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
