@@ -8367,7 +8367,7 @@ shorts if necessary</text>
 <label x="144.78" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MCU_TX" class="0">
+<net name="MCU_D1" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD1(TXD)"/>
 <wire x1="215.9" y1="137.16" x2="269.24" y2="137.16" width="0.1524" layer="91"/>
@@ -8531,25 +8531,16 @@ shorts if necessary</text>
 <wire x1="215.9" y1="104.14" x2="246.38" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MCU_RX_R" class="0">
+<net name="MCU_RX" class="0">
 <segment>
 <pinref part="R102" gate="G$1" pin="1"/>
 <wire x1="287.02" y1="144.78" x2="294.64" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="144.78" x2="294.64" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="139.7" x2="325.12" y2="139.7" width="0.1524" layer="91"/>
-<label x="312.42" y="139.7" size="1.778" layer="95"/>
+<label x="314.96" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MCU_TX_R" class="0">
-<segment>
-<pinref part="R103" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="132.08" x2="294.64" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="132.08" x2="294.64" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="137.16" x2="325.12" y2="137.16" width="0.1524" layer="91"/>
-<label x="312.42" y="137.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MCU_RX" class="0">
+<net name="MCU_D0" class="0">
 <segment>
 <pinref part="U101" gate="U$1" pin="PD0(RXD)"/>
 <wire x1="215.9" y1="139.7" x2="269.24" y2="139.7" width="0.1524" layer="91"/>
@@ -8557,6 +8548,15 @@ shorts if necessary</text>
 <pinref part="R102" gate="G$1" pin="2"/>
 <wire x1="269.24" y1="144.78" x2="276.86" y2="144.78" width="0.1524" layer="91"/>
 <label x="236.22" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_TX" class="0">
+<segment>
+<pinref part="R103" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="132.08" x2="294.64" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="132.08" x2="294.64" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="137.16" x2="325.12" y2="137.16" width="0.1524" layer="91"/>
+<label x="314.96" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -9083,7 +9083,7 @@ stuff'd strapping resistors.</text>
 <junction x="106.68" y="129.54"/>
 </segment>
 </net>
-<net name="MCU_RX_R" class="0">
+<net name="MCU_RX" class="0">
 <segment>
 <pinref part="R205" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="165.1" x2="327.66" y2="165.1" width="0.1524" layer="91"/>
