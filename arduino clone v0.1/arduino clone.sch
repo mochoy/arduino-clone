@@ -8518,6 +8518,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J203" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-2" device="" package3d_urn="urn:adsk.eagle:package:8334/1" value="ICSP HEADER"/>
 <part name="J201" library="adafruit" deviceset="PINHD-1X15" device="-CB"/>
 <part name="J202" library="adafruit" deviceset="PINHD-1X15" device="-CB"/>
+<part name="GND19" library="supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8952,10 +8953,224 @@ shorts if necessary</text>
 <instance part="J203" gate="1" x="226.06" y="165.1"/>
 <instance part="J201" gate="A" x="127" y="160.02"/>
 <instance part="J202" gate="A" x="127" y="111.76"/>
+<instance part="GND19" gate="1" x="83.82" y="165.1" smashed="yes">
+<attribute name="VALUE" x="81.5975" y="162.56" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="MCU_D0" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="2"/>
+<wire x1="124.46" y1="175.26" x2="91.44" y2="175.26" width="0.1524" layer="91"/>
+<label x="91.44" y="175.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D2" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="5"/>
+<wire x1="124.46" y1="167.64" x2="91.44" y2="167.64" width="0.1524" layer="91"/>
+<label x="91.44" y="167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D3" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="6"/>
+<wire x1="124.46" y1="165.1" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
+<label x="91.44" y="165.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D4" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="7"/>
+<wire x1="124.46" y1="162.56" x2="91.44" y2="162.56" width="0.1524" layer="91"/>
+<label x="91.44" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D5" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="8"/>
+<wire x1="124.46" y1="160.02" x2="91.44" y2="160.02" width="0.1524" layer="91"/>
+<label x="91.44" y="160.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D6" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="9"/>
+<wire x1="124.46" y1="157.48" x2="91.44" y2="157.48" width="0.1524" layer="91"/>
+<label x="91.44" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D7" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="10"/>
+<wire x1="124.46" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
+<label x="91.44" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D8" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="11"/>
+<wire x1="124.46" y1="152.4" x2="91.44" y2="152.4" width="0.1524" layer="91"/>
+<label x="91.44" y="152.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D9" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="12"/>
+<wire x1="124.46" y1="149.86" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
+<label x="91.44" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D10" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="13"/>
+<wire x1="124.46" y1="147.32" x2="91.44" y2="147.32" width="0.1524" layer="91"/>
+<label x="91.44" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D11" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="14"/>
+<wire x1="124.46" y1="144.78" x2="91.44" y2="144.78" width="0.1524" layer="91"/>
+<label x="91.44" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_D12" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="15"/>
+<wire x1="124.46" y1="142.24" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
+<label x="91.44" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<wire x1="121.92" y1="129.54" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="1"/>
+<wire x1="124.46" y1="129.54" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<wire x1="121.92" y1="127" x2="91.44" y2="127" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="2"/>
+<wire x1="124.46" y1="127" x2="121.92" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<wire x1="121.92" y1="124.46" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="3"/>
+<wire x1="124.46" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<wire x1="121.92" y1="121.92" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="4"/>
+<wire x1="124.46" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<wire x1="121.92" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="5"/>
+<wire x1="124.46" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<wire x1="121.92" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="6"/>
+<wire x1="124.46" y1="116.84" x2="121.92" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<wire x1="121.92" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="7"/>
+<wire x1="124.46" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<wire x1="121.92" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="8"/>
+<wire x1="124.46" y1="111.76" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<wire x1="121.92" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="9"/>
+<wire x1="124.46" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<wire x1="121.92" y1="106.68" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="10"/>
+<wire x1="124.46" y1="106.68" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<wire x1="121.92" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="11"/>
+<wire x1="124.46" y1="104.14" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<wire x1="121.92" y1="101.6" x2="91.44" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="12"/>
+<wire x1="124.46" y1="101.6" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<wire x1="121.92" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="13"/>
+<wire x1="124.46" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<wire x1="121.92" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="14"/>
+<wire x1="124.46" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<wire x1="121.92" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="J202" gate="A" pin="15"/>
+<wire x1="124.46" y1="93.98" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MCU_D1" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="1"/>
+<wire x1="124.46" y1="177.8" x2="91.44" y2="177.8" width="0.1524" layer="91"/>
+<label x="91.44" y="177.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_RESET" class="0">
+<segment>
+<pinref part="J201" gate="A" pin="3"/>
+<wire x1="124.46" y1="172.72" x2="91.44" y2="172.72" width="0.1524" layer="91"/>
+<label x="91.44" y="172.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="83.82" y1="167.64" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="J201" gate="A" pin="4"/>
+<wire x1="83.82" y1="170.18" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
