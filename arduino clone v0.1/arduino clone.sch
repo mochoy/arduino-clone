@@ -8184,6 +8184,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND18" library="supply" deviceset="GND" device=""/>
 <part name="R102" library="adafruit" deviceset="R-US_" device="R0805" value="1k"/>
 <part name="R103" library="adafruit" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="Arduino Clone v0.1"/>
 </parts>
 <sheets>
 <sheet>
@@ -8571,6 +8572,22 @@ shorts if necessary</text>
 <label x="248.92" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="27.94" y="238.76" size="5.08" layer="97">MCU BREAKOUT HEADERS</text>
+</plain>
+<instances>
+<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="344.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 <sheet>
