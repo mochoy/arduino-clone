@@ -9665,7 +9665,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 <class number="1" name="BATT_POWER" width="0.254" drill="0">
 </class>
-<class number="2" name="DIFF_PAIR_USB" width="0.4064" drill="0">
+<class number="2" name="DIFF_PAIR_USB" width="0.254" drill="0">
 </class>
 </classes>
 <parts>
