@@ -2560,7 +2560,7 @@ design rules under a new name.</description>
 <signal name="FTDI_CTS">
 <contactref element="R401" pad="1"/>
 <contactref element="J402" pad="2"/>
-<wire x1="50.546" y1="48.26" x2="53.864" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="53.864" y1="48.26" x2="50.546" y2="48.26" width="0.254" layer="1"/>
 </signal>
 <signal name="FDTI_TX">
 <contactref element="R403" pad="1"/>
