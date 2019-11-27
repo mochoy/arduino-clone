@@ -9665,6 +9665,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 <class number="1" name="BATT_POWER" width="0.254" drill="0">
 </class>
+<class number="2" name="DIFF_PAIR_USB" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="Arduino Clone v0.1"/>
