@@ -10749,7 +10749,7 @@ stuff'd strapping resistors.</text>
 <label x="60.96" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CH340G_USB_DAT_P" class="0">
+<net name="CH340G_USB_DAT_P" class="2">
 <segment>
 <pinref part="U301" gate="G$1" pin="D+"/>
 <wire x1="175.26" y1="144.78" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
@@ -10760,7 +10760,7 @@ stuff'd strapping resistors.</text>
 <label x="154.94" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CH340G_USB_DAT_N" class="0">
+<net name="CH340G_USB_DAT_N" class="2">
 <segment>
 <pinref part="R304" gate="G$1" pin="1"/>
 <wire x1="127" y1="137.16" x2="137.16" y2="137.16" width="0.1524" layer="91"/>
