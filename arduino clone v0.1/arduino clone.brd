@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2070,7 +2070,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="17.145" y="52.07" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="U101" library="SparkFun-IC-Microcontroller" package="TQFP32-08" value="ATMEGA328P_TQFP" x="34.29" y="52.07" smashed="yes">
-<attribute name="NAME" x="34.29" y="57.785" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="IC-09069" x="34.29" y="52.07" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="34.29" y="45.72" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center"/>
 </element>
@@ -2224,7 +2223,11 @@ design rules under a new name.</description>
 <contactref element="U101" pad="31"/>
 <contactref element="R103" pad="2"/>
 <contactref element="J201" pad="1"/>
-<wire x1="32.29" y1="56.3626" x2="45.228" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="32.29" y1="56.3626" x2="32.29" y2="57.69" width="0.1524" layer="1"/>
+<wire x1="32.29" y1="57.69" x2="33.274" y2="58.674" width="0.1524" layer="1"/>
+<wire x1="33.274" y1="58.674" x2="44.196" y2="58.674" width="0.1524" layer="1"/>
+<wire x1="44.196" y1="58.674" x2="45.228" y2="57.642" width="0.1524" layer="1"/>
+<wire x1="45.228" y1="57.642" x2="45.228" y2="57.15" width="0.1524" layer="1"/>
 <wire x1="24.13" y1="40.64" x2="32.29" y2="56.3626" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_XTAL_IN">
@@ -2365,7 +2368,13 @@ design rules under a new name.</description>
 <contactref element="U101" pad="30"/>
 <contactref element="R102" pad="2"/>
 <contactref element="J201" pad="2"/>
-<wire x1="33.09" y1="56.3626" x2="45.228" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="33.09" y1="56.3626" x2="33.09" y2="57.728" width="0.1524" layer="1"/>
+<wire x1="33.09" y1="57.728" x2="33.528" y2="58.166" width="0.1524" layer="1"/>
+<wire x1="43.434" y1="58.166" x2="44.4494" y2="57.1506" width="0.1524" layer="1"/>
+<wire x1="44.4494" y1="57.1506" x2="44.4494" y2="56.3553125" width="0.1524" layer="1"/>
+<wire x1="45.228" y1="55.5767125" x2="45.228" y2="54.61" width="0.1524" layer="1"/>
+<wire x1="44.4494" y1="56.3553125" x2="45.228" y2="55.5767125" width="0.1524" layer="1"/>
+<wire x1="33.528" y1="58.166" x2="43.434" y2="58.166" width="0.1524" layer="1"/>
 <wire x1="26.67" y1="40.64" x2="33.09" y2="56.3626" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_TX">
