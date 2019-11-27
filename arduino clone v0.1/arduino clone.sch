@@ -10718,7 +10718,7 @@ stuff'd strapping resistors.</text>
 <junction x="236.22" y="220.98"/>
 </segment>
 </net>
-<net name="N_USB_D-" class="0">
+<net name="USB_DAT_N" class="0">
 <segment>
 <wire x1="76.2" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="142.24" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
@@ -10770,7 +10770,7 @@ stuff'd strapping resistors.</text>
 <label x="162.56" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P_USB_D+" class="0">
+<net name="USB_DAT_P" class="0">
 <segment>
 <pinref part="R303" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="147.32" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
@@ -11026,7 +11026,7 @@ CH340Gs leave CTS floating.</text>
 <wire x1="185.42" y1="144.78" x2="185.42" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N_USB_D-" class="0">
+<net name="USB_DAT_N" class="0">
 <segment>
 <pinref part="J401" gate="G$1" pin="D-"/>
 <wire x1="50.8" y1="175.26" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
@@ -11053,7 +11053,7 @@ CH340Gs leave CTS floating.</text>
 <label x="297.18" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P_USB_D+" class="0">
+<net name="USB_DAT_P" class="0">
 <segment>
 <pinref part="J401" gate="G$1" pin="D+"/>
 <wire x1="50.8" y1="177.8" x2="81.28" y2="177.8" width="0.1524" layer="91"/>
