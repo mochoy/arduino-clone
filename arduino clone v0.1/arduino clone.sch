@@ -10857,16 +10857,11 @@ stuff'd strapping resistors.</text>
 <wire x1="185.42" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="104.14" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 <label x="154.94" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R308" gate="G$1" pin="2"/>
 <pinref part="R307" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="43.18" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="50.8" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R308" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="58.42" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="50.8" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 <junction x="121.92" y="50.8"/>
 </segment>
 </net>
