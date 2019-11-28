@@ -1965,12 +1965,11 @@ design rules under a new name.</description>
 </element>
 <element name="J201" library="adafruit" package="1X15-CB" value="" x="41.91" y="40.64" smashed="yes"/>
 <element name="J202" library="adafruit" package="1X15-CB" value="" x="41.91" y="63.5" smashed="yes"/>
-<element name="J203" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA03-2" package3d_urn="urn:adsk.eagle:package:8334/1" value="ICSP HEADER" x="13.97" y="56.388" smashed="yes" rot="R90">
-<attribute name="MF" value="" x="13.97" y="56.388" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="13.97" y="56.388" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="11.049" y="52.578" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="OC_FARNELL" value="unknown" x="13.97" y="56.388" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="13.97" y="56.388" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="J203" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA03-2" package3d_urn="urn:adsk.eagle:package:8334/1" value="ICSP HEADER" x="13.716" y="47.244" smashed="yes" rot="R90">
+<attribute name="MF" value="" x="13.716" y="47.244" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="13.716" y="47.244" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="13.716" y="47.244" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="13.716" y="47.244" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="J401" library="Testing" package="USB-AB-MICRO-SMD-V03-IN&amp;OUT" value="" x="79.502" y="52.07" smashed="yes" rot="R180">
 <attribute name="VALUE" x="80.772" y="46.609" size="0.4064" layer="27" rot="R180"/>
@@ -1990,8 +1989,8 @@ design rules under a new name.</description>
 <element name="R103" library="adafruit" package="R0805" value="1k" x="46.228" y="57.15" smashed="yes" rot="R180">
 <attribute name="NAME" x="44.196" y="57.912" size="1.27" layer="25" rot="R180"/>
 </element>
-<element name="R104" library="adafruit" package="R0805" value="0" x="-12.7" y="36.322" smashed="yes">
-<attribute name="NAME" x="-13.462" y="37.338" size="1.27" layer="25"/>
+<element name="R104" library="adafruit" package="R0805" value="0" x="17.78" y="55.372" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.288" y="57.404" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="R105" library="adafruit" package="R0805" value="0" x="74.676" y="47.498" smashed="yes" rot="R90">
 <attribute name="NAME" x="75.946" y="45.466" size="1.27" layer="25"/>
@@ -2051,11 +2050,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="55.626" y="44.704" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="55.626" y="48.006" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="S101" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="RESET_BTN" x="13.716" y="44.958" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.541" y="44.958" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="SWCH-11966" x="13.716" y="44.958" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SF_SKU" value="COM-12992" x="13.716" y="44.958" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="16.891" y="44.958" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="S101" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="RESET_BTN" x="12.954" y="58.166" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.779" y="58.166" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="SWCH-11966" x="12.954" y="58.166" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SF_SKU" value="COM-12992" x="12.954" y="58.166" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="16.129" y="58.166" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="U101" library="SparkFun-IC-Microcontroller" package="TQFP32-08" value="ATMEGA328P_TQFP" x="34.29" y="52.07" smashed="yes">
 <attribute name="PROD_ID" value="IC-09069" x="34.29" y="52.07" size="1.778" layer="27" display="off"/>
@@ -2070,9 +2069,9 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="XTAL-08297" x="62.484" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="62.484" y="61.595" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="DS201" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="20.32" y="55.88" smashed="yes"/>
-<element name="R201" library="adafruit" package="M0805" value="270" x="20.32" y="60.198" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.78" y="62.484" size="1.27" layer="25" rot="R270"/>
+<element name="DS201" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="20.066" y="55.88" smashed="yes"/>
+<element name="R201" library="adafruit" package="M0805" value="270" x="20.066" y="60.198" smashed="yes" rot="R270">
+<attribute name="NAME" x="18.288" y="62.23" size="1.27" layer="25"/>
 </element>
 <element name="DS202" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="25.4" y="44.45" smashed="yes" rot="R90"/>
 <element name="R202" library="adafruit" package="M0805" value="270" x="21.082" y="44.196" smashed="yes">
@@ -2120,15 +2119,14 @@ design rules under a new name.</description>
 <vertex x="26.162" y="51.816"/>
 <vertex x="23.876" y="51.816"/>
 <vertex x="22.352" y="53.34"/>
-<vertex x="19.304" y="53.34"/>
-<vertex x="19.304" y="55.626"/>
+<vertex x="16.51" y="53.34"/>
+<vertex x="16.51" y="55.626"/>
 <vertex x="22.606" y="55.626"/>
 </polygon>
-<wire x1="20.32" y1="54.83" x2="23.606" y2="72.898" width="0" layer="19" extent="1-1"/>
+<wire x1="20.066" y1="54.83" x2="23.606" y2="72.898" width="0" layer="19" extent="1-1"/>
 <wire x1="38.5826" y1="50.07" x2="29.9974" y2="50.87" width="0" layer="19" extent="1-1"/>
 <wire x1="44.704" y1="45.686" x2="38.5826" y2="50.07" width="0" layer="19" extent="1-1"/>
 <wire x1="47.244" y1="45.686" x2="44.704" y2="45.686" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.7" y1="36.322" x2="20.32" y2="54.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="U101" pad="5"/>
@@ -2164,7 +2162,7 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="72.771" y1="50.193" x2="76.802" y2="53.37" width="0" layer="19" extent="1-1"/>
 <wire x1="29.9974" y1="51.67" x2="29.9974" y2="53.27" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.51" y1="52.578" x2="12.7" y2="58.928" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.51" y1="52.578" x2="12.446" y2="49.784" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_RESET">
 <contactref element="R101" pad="1"/>
@@ -2179,8 +2177,8 @@ design rules under a new name.</description>
 <wire x1="29.21" y1="63.5" x2="33.89" y2="56.3626" width="0" layer="19" extent="1-1"/>
 <wire x1="36.51" y1="71.12" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="21.606" y1="72.898" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="15.24" y1="58.928" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="11.466" y1="48.933" x2="15.24" y2="58.928" width="0" layer="19" extent="1-1"/>
+<wire x1="14.986" y1="49.784" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="10.704" y1="62.141" x2="14.986" y2="49.784" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="40.64" x2="33.89" y2="56.3626" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_AREF">
@@ -2306,14 +2304,14 @@ design rules under a new name.</description>
 <contactref element="J201" pad="14"/>
 <contactref element="J203" pad="4"/>
 <wire x1="36.29" y1="47.7774" x2="57.15" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="56.388" x2="36.29" y2="47.7774" width="0" layer="19" extent="1-1"/>
+<wire x1="12.446" y1="47.244" x2="36.29" y2="47.7774" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_D12">
 <contactref element="U101" pad="16"/>
 <contactref element="J201" pad="15"/>
 <contactref element="J203" pad="1"/>
 <wire x1="37.09" y1="47.7774" x2="59.69" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="15.24" y1="53.848" x2="37.09" y2="47.7774" width="0" layer="19" extent="1-1"/>
+<wire x1="14.986" y1="44.704" x2="37.09" y2="47.7774" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_D13">
 <contactref element="U101" pad="17"/>
@@ -2322,7 +2320,7 @@ design rules under a new name.</description>
 <contactref element="DS202" pad="A"/>
 <wire x1="38.5826" y1="49.27" x2="59.69" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="26.45" y1="44.45" x2="38.5826" y2="49.27" width="0" layer="19" extent="1-1"/>
-<wire x1="15.24" y1="56.388" x2="26.45" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="14.986" y1="47.244" x2="26.45" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_RX">
 <contactref element="R102" pad="1"/>
@@ -2395,8 +2393,8 @@ design rules under a new name.</description>
 <wire x1="50.546" y1="50.8" x2="57.15" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="31.75" y1="63.5" x2="50.546" y2="50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="63.5" x2="31.75" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="53.848" x2="24.13" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-11.7" y1="36.322" x2="12.7" y2="53.848" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="56.372" x2="24.13" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="12.446" y1="44.704" x2="17.78" y2="56.372" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PP5V0_CH340G">
 <contactref element="R105" pad="1"/>
@@ -2563,7 +2561,7 @@ design rules under a new name.</description>
 <signal name="LED_DS201" class="1">
 <contactref element="R201" pad="2"/>
 <contactref element="DS201" pad="C"/>
-<wire x1="20.32" y1="56.93" x2="20.32" y2="59.248" width="0.508" layer="1"/>
+<wire x1="20.066" y1="56.93" x2="20.066" y2="59.248" width="0.508" layer="1"/>
 </signal>
 <signal name="LED_DS202" class="1">
 <contactref element="R202" pad="2"/>
