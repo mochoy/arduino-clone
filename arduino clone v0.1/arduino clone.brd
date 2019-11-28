@@ -2075,13 +2075,13 @@ design rules under a new name.</description>
 <element name="R202" library="adafruit" package="M0805" value="270" x="21.082" y="44.196" smashed="yes">
 <attribute name="NAME" x="19.05" y="45.212" size="1.27" layer="25"/>
 </element>
-<element name="DS401" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="33.02" y="59.944" smashed="yes"/>
-<element name="R406" library="adafruit" package="M0805" value="270" x="35.814" y="59.944" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.83" y="60.96" size="1.27" layer="25" rot="R270"/>
+<element name="DS401" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="41.402" y="59.182" smashed="yes" rot="R270"/>
+<element name="R406" library="adafruit" package="M0805" value="270" x="44.704" y="58.166" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.688" y="57.15" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="DS402" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="28.448" y="59.436" smashed="yes"/>
-<element name="R407" library="adafruit" package="M0805" value="270" x="30.48" y="59.69" smashed="yes" rot="R270">
-<attribute name="NAME" x="31.496" y="60.706" size="1.27" layer="25" rot="R270"/>
+<element name="DS402" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="41.402" y="57.15" smashed="yes" rot="R270"/>
+<element name="R407" library="adafruit" package="M0805" value="270" x="47.244" y="58.166" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.228" y="57.15" size="1.27" layer="25" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -2121,10 +2121,11 @@ design rules under a new name.</description>
 <vertex x="19.05" y="55.626"/>
 <vertex x="22.606" y="55.626"/>
 </polygon>
-<wire x1="20.066" y1="54.83" x2="23.606" y2="72.898" width="0" layer="19" extent="1-1"/>
-<wire x1="38.5826" y1="50.07" x2="29.9974" y2="50.87" width="0" layer="19" extent="1-1"/>
-<wire x1="28.448" y1="58.386" x2="38.5826" y2="50.07" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="58.894" x2="28.448" y2="58.386" width="0" layer="19" extent="1-1"/>
+<wire x1="40.352" y1="57.15" x2="40.352" y2="59.182" width="0" layer="19" extent="1-1"/>
+<wire x1="38.5826" y1="50.07" x2="40.352" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="42.418" y1="49.26" x2="38.5826" y2="50.07" width="0" layer="19" extent="1-1"/>
+<wire x1="29.9974" y1="50.87" x2="38.5826" y2="50.07" width="0" layer="19" extent="1-1"/>
+<wire x1="23.606" y1="72.898" x2="20.066" y2="54.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="U101" pad="5"/>
@@ -2175,8 +2176,8 @@ design rules under a new name.</description>
 <wire x1="29.21" y1="63.5" x2="33.89" y2="56.3626" width="0" layer="19" extent="1-1"/>
 <wire x1="36.51" y1="71.12" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="21.606" y1="72.898" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="14.986" y1="49.784" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="10.704" y1="62.141" x2="14.986" y2="49.784" width="0" layer="19" extent="1-1"/>
+<wire x1="10.704" y1="62.141" x2="21.606" y2="72.898" width="0" layer="19" extent="1-1"/>
+<wire x1="14.986" y1="49.784" x2="10.704" y2="62.141" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="40.64" x2="33.89" y2="56.3626" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_AREF">
@@ -2329,7 +2330,9 @@ design rules under a new name.</description>
 <wire x1="47.244" y1="52.054" x2="47.228" y2="52.07" width="0.254" layer="1"/>
 <wire x1="47.228" y1="52.07" x2="54.864" y2="52.07" width="0.254" layer="1"/>
 <wire x1="54.864" y1="52.07" x2="55.999" y2="53.205" width="0.254" layer="1"/>
-<wire x1="35.814" y1="60.894" x2="47.228" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="44.704" y1="57.216" x2="46.228" y2="55.692" width="0.254" layer="1"/>
+<wire x1="46.228" y1="53.07" x2="47.244" y2="52.054" width="0.254" layer="1"/>
+<wire x1="46.228" y1="55.692" x2="46.228" y2="53.07" width="0.254" layer="1"/>
 </signal>
 <signal name="MCU_D0">
 <contactref element="U101" pad="30"/>
@@ -2345,10 +2348,10 @@ design rules under a new name.</description>
 <contactref element="R407" pad="1"/>
 <wire x1="55.864" y1="55.88" x2="58.69" y2="53.054" width="0.254" layer="1"/>
 <wire x1="58.69" y1="53.054" x2="58.69" y2="49.53" width="0.254" layer="1"/>
-<wire x1="30.922" y1="60.64" x2="30.48" y2="60.64" width="0.254" layer="1"/>
 <wire x1="47.228" y1="54.61" x2="54.594" y2="54.61" width="0.254" layer="1"/>
 <wire x1="54.594" y1="54.61" x2="55.864" y2="55.88" width="0.254" layer="1"/>
-<wire x1="30.922" y1="60.64" x2="47.228" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="47.244" y1="57.216" x2="47.244" y2="54.626" width="0.254" layer="1"/>
+<wire x1="47.244" y1="54.626" x2="47.228" y2="54.61" width="0.254" layer="1"/>
 </signal>
 <signal name="MCU_D6">
 <contactref element="U101" pad="10"/>
@@ -2376,10 +2379,10 @@ design rules under a new name.</description>
 <wire x1="74.676" y1="48.498" x2="76.802" y2="50.77" width="0" layer="19" extent="1-1"/>
 <wire x1="57.15" y1="63.5" x2="76.184" y2="60.452" width="0" layer="19" extent="1-1"/>
 <wire x1="50.546" y1="50.8" x2="57.15" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="63.5" x2="50.546" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="42.418" y1="47.26" x2="50.546" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="63.5" x2="42.418" y2="47.26" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="63.5" x2="31.75" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="42.418" y1="47.26" x2="24.13" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="12.446" y1="44.704" x2="42.418" y2="47.26" width="0" layer="19" extent="1-1"/>
+<wire x1="12.446" y1="44.704" x2="24.13" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PP5V0_CH340G">
 <contactref element="R105" pad="1"/>
@@ -2557,12 +2560,16 @@ design rules under a new name.</description>
 <signal name="LED_DS401" class="1">
 <contactref element="R406" pad="2"/>
 <contactref element="DS401" pad="C"/>
-<wire x1="33.02" y1="60.994" x2="35.814" y2="58.994" width="0" layer="19" extent="1-1"/>
+<wire x1="42.452" y1="59.182" x2="44.638" y2="59.182" width="0.254" layer="1"/>
+<wire x1="44.638" y1="59.182" x2="44.704" y2="59.116" width="0.254" layer="1"/>
 </signal>
 <signal name="LED_DS402" class="1">
 <contactref element="R407" pad="2"/>
 <contactref element="DS402" pad="C"/>
-<wire x1="28.448" y1="60.486" x2="30.48" y2="58.74" width="0" layer="19" extent="1-1"/>
+<wire x1="47.244" y1="59.116" x2="46.54913125" y2="59.116" width="0.254" layer="1"/>
+<wire x1="43.4886" y1="58.1866" x2="42.452" y2="57.15" width="0.254" layer="1"/>
+<wire x1="46.54913125" y1="59.116" x2="45.61973125" y2="58.1866" width="0.254" layer="1"/>
+<wire x1="45.61973125" y1="58.1866" x2="43.4886" y2="58.1866" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
