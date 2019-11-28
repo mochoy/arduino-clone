@@ -2854,6 +2854,14 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="4,1,5b5cc9703d690183"/>
+<approved hash="4,1,796646c392d88c09"/>
+<approved hash="4,1,a977eebf0d00d657"/>
+<approved hash="4,1,2ed1b62e1f9e2dca"/>
+<approved hash="4,1,932345f945958f33"/>
+<approved hash="4,1,ad26ec753c5beaea"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
