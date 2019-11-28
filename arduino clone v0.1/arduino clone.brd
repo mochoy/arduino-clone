@@ -2194,7 +2194,7 @@ design rules under a new name.</description>
 <contactref element="U101" pad="31"/>
 <contactref element="R103" pad="2"/>
 <contactref element="J201" pad="1"/>
-<wire x1="32.29" y1="56.3626" x2="45.228" y2="55.118" width="0" layer="19" extent="1-1"/>
+<wire x1="45.228" y1="55.118" x2="32.29" y2="56.3626" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="40.64" x2="32.29" y2="56.3626" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_XTAL_IN">
@@ -2229,12 +2229,21 @@ design rules under a new name.</description>
 <signal name="MCU_A2">
 <contactref element="U101" pad="25"/>
 <contactref element="J202" pad="10"/>
-<wire x1="37.09" y1="56.3626" x2="46.99" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="37.846" y1="57.1186" x2="37.846" y2="57.658" width="0.254" layer="1"/>
+<via x="37.846" y="57.658" extent="1-16" drill="0.35"/>
+<wire x1="37.846" y1="57.658" x2="41.402" y2="61.214" width="0.254" layer="16"/>
+<wire x1="41.402" y1="61.214" x2="44.704" y2="61.214" width="0.254" layer="16"/>
+<wire x1="44.704" y1="61.214" x2="46.99" y2="63.5" width="0.254" layer="16"/>
+<wire x1="37.09" y1="56.3626" x2="37.846" y2="57.1186" width="0.254" layer="1"/>
 </signal>
 <signal name="MCU_A5">
 <contactref element="U101" pad="28"/>
 <contactref element="J202" pad="7"/>
-<wire x1="34.69" y1="56.3626" x2="39.37" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="34.69" y1="56.3626" x2="34.69" y2="57.804" width="0.254" layer="1"/>
+<wire x1="34.69" y1="57.804" x2="34.798" y2="57.912" width="0.254" layer="1"/>
+<via x="34.798" y="57.912" extent="1-16" drill="0.35"/>
+<wire x1="34.798" y1="57.912" x2="34.798" y2="58.928" width="0.254" layer="16"/>
+<wire x1="34.798" y1="58.928" x2="39.37" y2="63.5" width="0.254" layer="16"/>
 </signal>
 <signal name="MCU_A6">
 <contactref element="U101" pad="19"/>
@@ -2249,12 +2258,22 @@ design rules under a new name.</description>
 <signal name="MCU_A4">
 <contactref element="U101" pad="27"/>
 <contactref element="J202" pad="8"/>
-<wire x1="35.49" y1="56.3626" x2="41.91" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="35.49" y1="56.3626" x2="35.49" y2="57.588" width="0.254" layer="1"/>
+<wire x1="35.49" y1="57.588" x2="35.814" y2="57.912" width="0.254" layer="1"/>
+<via x="35.814" y="57.912" extent="1-16" drill="0.35"/>
+<wire x1="41.402" y1="63.5" x2="41.91" y2="63.5" width="0.254" layer="16"/>
+<wire x1="35.814" y1="57.912" x2="41.402" y2="63.5" width="0.254" layer="16"/>
 </signal>
 <signal name="MCU_A3">
 <contactref element="U101" pad="26"/>
 <contactref element="J202" pad="9"/>
-<wire x1="36.29" y1="56.3626" x2="44.45" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="36.29" y1="56.3626" x2="36.322" y2="56.3946" width="0.254" layer="1"/>
+<wire x1="36.322" y1="56.3946" x2="36.322" y2="57.4192375" width="0.254" layer="1"/>
+<wire x1="36.82238125" y1="57.91961875" x2="36.322" y2="57.4192375" width="0.254" layer="1"/>
+<via x="36.82238125" y="57.91961875" extent="1-16" drill="0.35"/>
+<wire x1="36.82238125" y1="57.91961875" x2="40.8787625" y2="61.976" width="0.254" layer="16"/>
+<wire x1="40.8787625" y1="61.976" x2="42.926" y2="61.976" width="0.254" layer="16"/>
+<wire x1="42.926" y1="61.976" x2="44.45" y2="63.5" width="0.254" layer="16"/>
 </signal>
 <signal name="MCU_D2">
 <contactref element="U101" pad="32"/>
@@ -2360,7 +2379,7 @@ design rules under a new name.</description>
 <contactref element="U101" pad="30"/>
 <contactref element="R102" pad="2"/>
 <contactref element="J201" pad="2"/>
-<wire x1="33.09" y1="56.3626" x2="45.228" y2="52.578" width="0" layer="19" extent="1-1"/>
+<wire x1="45.228" y1="52.578" x2="33.09" y2="56.3626" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="40.64" x2="33.09" y2="56.3626" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_TX">
