@@ -2217,7 +2217,14 @@ design rules under a new name.</description>
 <contactref element="J202" pad="13"/>
 <wire x1="38.5826" y1="51.67" x2="41.444" y2="51.67" width="0.254" layer="1"/>
 <wire x1="41.444" y1="51.67" x2="42.418" y2="52.644" width="0.254" layer="1"/>
-<wire x1="42.418" y1="52.644" x2="54.61" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="42.418" y1="52.644" x2="42.992" y2="52.644" width="0.254" layer="1"/>
+<wire x1="42.992" y1="52.644" x2="44.196" y2="53.848" width="0.254" layer="1"/>
+<via x="44.196" y="53.848" extent="1-16" drill="0.35"/>
+<wire x1="53.848" y1="63.5" x2="54.61" y2="63.5" width="0.254" layer="16"/>
+<wire x1="44.196" y1="54.3047625" x2="51.3846375" y2="61.4934" width="0.254" layer="16"/>
+<wire x1="51.3846375" y1="61.4934" x2="51.8414" y2="61.4934" width="0.254" layer="16"/>
+<wire x1="51.8414" y1="61.4934" x2="53.848" y2="63.5" width="0.254" layer="16"/>
+<wire x1="44.196" y1="53.848" x2="44.196" y2="54.3047625" width="0.254" layer="16"/>
 </signal>
 <signal name="MCU_D1">
 <contactref element="U101" pad="31"/>
@@ -2339,12 +2346,12 @@ design rules under a new name.</description>
 <signal name="MCU_D3">
 <contactref element="U101" pad="1"/>
 <contactref element="J201" pad="6"/>
-<wire x1="36.83" y1="40.64" x2="29.9974" y2="54.87" width="0" layer="19" extent="1-1"/>
+<wire x1="29.9974" y1="54.87" x2="36.83" y2="40.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_D4">
 <contactref element="U101" pad="2"/>
 <contactref element="J201" pad="7"/>
-<wire x1="39.37" y1="40.64" x2="29.9974" y2="54.07" width="0" layer="19" extent="1-1"/>
+<wire x1="29.9974" y1="54.07" x2="39.37" y2="40.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_D5">
 <contactref element="U101" pad="9"/>
@@ -2411,7 +2418,7 @@ design rules under a new name.</description>
 <wire x1="26.45" y1="45.72" x2="27.72" y2="44.45" width="0.254" layer="1"/>
 <wire x1="19.812" y1="45.72" x2="26.45" y2="45.72" width="0.254" layer="1"/>
 <wire x1="16.764" y1="46.99" x2="18.542" y2="46.99" width="0.254" layer="1"/>
-<wire x1="38.5826" y1="49.27" x2="59.69" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="63.5" x2="38.5826" y2="49.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_RX">
 <contactref element="R102" pad="1"/>
