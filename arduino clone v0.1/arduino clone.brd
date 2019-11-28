@@ -2097,36 +2097,32 @@ design rules under a new name.</description>
 <vertex x="32.258" y="52.832"/>
 <vertex x="32.258" y="51.308"/>
 <vertex x="32.258" y="50.546"/>
-<vertex x="31.75" y="50.546"/>
-<vertex x="29.464" y="50.546"/>
-<vertex x="29.464" y="51.308"/>
+<vertex x="39.37" y="50.546"/>
+<vertex x="39.37" y="51.054"/>
+<vertex x="44.45" y="51.054"/>
+<vertex x="44.45" y="50.546"/>
+<vertex x="44.45" y="49.53"/>
+<vertex x="44.45" y="49.276"/>
+<vertex x="39.37" y="49.276"/>
+<vertex x="39.37" y="49.53"/>
+<vertex x="32.766" y="49.53"/>
+<vertex x="30.988" y="49.53"/>
+<vertex x="30.988" y="50.546"/>
+<vertex x="28.956" y="50.546"/>
+<vertex x="28.956" y="51.308"/>
 <vertex x="31.75" y="51.308"/>
 <vertex x="31.75" y="52.07"/>
 <vertex x="28.956" y="52.07"/>
-<vertex x="28.956" y="51.816"/>
-<vertex x="28.448" y="51.816"/>
-<vertex x="26.162" y="51.816"/>
-<vertex x="24.638" y="51.816"/>
+<vertex x="28.194" y="52.07"/>
+<vertex x="26.416" y="52.07"/>
+<vertex x="24.384" y="52.07"/>
 <vertex x="23.114" y="53.34"/>
 <vertex x="22.098" y="53.34"/>
 <vertex x="22.098" y="55.626"/>
 <vertex x="22.606" y="55.626"/>
 </polygon>
-<polygon width="0.0762" layer="1">
-<vertex x="37.846" y="50.546"/>
-<vertex x="39.37" y="50.546"/>
-<vertex x="39.37" y="51.308"/>
-<vertex x="44.704" y="51.308"/>
-<vertex x="44.704" y="49.784"/>
-<vertex x="44.704" y="49.276"/>
-<vertex x="39.37" y="49.276"/>
-<vertex x="39.37" y="49.53"/>
-<vertex x="37.084" y="49.53"/>
-<vertex x="37.084" y="50.546"/>
-</polygon>
 <wire x1="40.352" y1="57.658" x2="40.352" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="40.894" y1="50.226" x2="40.352" y2="57.658" width="0" layer="19" extent="1-1"/>
-<wire x1="29.9974" y1="50.87" x2="38.5826" y2="50.07" width="0" layer="19" extent="1-1"/>
 <wire x1="23.606" y1="72.898" x2="23.114" y2="54.576" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
@@ -2162,7 +2158,6 @@ design rules under a new name.</description>
 <vertex x="-1.27" y="36.83"/>
 </polygon>
 <wire x1="72.771" y1="50.193" x2="76.802" y2="53.37" width="0" layer="19" extent="1-1"/>
-<wire x1="29.9974" y1="51.67" x2="29.9974" y2="53.27" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.51" y1="52.578" x2="12.446" y2="49.784" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_RESET">
