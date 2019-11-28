@@ -1935,14 +1935,10 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="42.164" y="51.054" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C105" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF" x="27.686" y="49.276" smashed="yes" rot="R270">
-<attribute name="NAME" x="28.956" y="50.546" size="1.27" layer="25" rot="R270"/>
 <attribute name="SPICEPREFIX" value="C" x="27.686" y="49.276" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="25.146" y="50.546" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C106" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF" x="24.638" y="48.006" smashed="yes" rot="R270">
-<attribute name="NAME" x="25.908" y="49.276" size="1.27" layer="25" rot="R270"/>
 <attribute name="SPICEPREFIX" value="C" x="24.638" y="48.006" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="22.098" y="49.276" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C301" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF" x="75.692" y="43.942" smashed="yes">
 <attribute name="NAME" x="77.978" y="43.434" size="1.27" layer="25"/>
@@ -1963,9 +1959,9 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="59.436" y="56.388" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="60.706" y="58.928" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C305" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF" x="31.75" y="72.136" smashed="yes">
-<attribute name="NAME" x="30.48" y="73.406" size="1.27" layer="25"/>
-<attribute name="SPICEPREFIX" value="C" x="31.75" y="72.136" size="1.778" layer="27" display="off"/>
+<element name="C305" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF" x="35.56" y="71.12" smashed="yes">
+<attribute name="NAME" x="34.29" y="72.39" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="C" x="35.56" y="71.12" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J201" library="adafruit" package="1X15-CB" value="" x="41.91" y="40.64" smashed="yes"/>
 <element name="J202" library="adafruit" package="1X15-CB" value="" x="41.91" y="63.5" smashed="yes"/>
@@ -1984,7 +1980,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="" x="50.546" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="50.546" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="50.546" y="52.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="53.467" y="49.53" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R101" library="adafruit" package="R0805" value="10k" x="22.606" y="72.898" smashed="yes">
 <attribute name="NAME" x="21.844" y="73.914" size="1.27" layer="25"/>
@@ -2068,13 +2063,10 @@ design rules under a new name.</description>
 </element>
 <element name="U301" library="my-eagle-lib" package="SOIC16" value="CH340G" x="68.326" y="47.498" smashed="yes" rot="R180"/>
 <element name="Y101" library="SparkFun-Clocks" package="CRYSTAL-SMD-5X3.2-4PAD" value="16MHz" x="21.082" y="49.784" smashed="yes" rot="R270">
-<attribute name="NAME" x="22.987" y="49.784" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="XTAL-08218" x="21.082" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SF_ID" value="COM-00094" x="21.082" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="19.177" y="49.784" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="Y301" library="SparkFun-Clocks" package="CRYSTAL-SMD-5X3.2-4PAD" value="12MHz" x="62.484" y="59.69" smashed="yes" rot="R180">
-<attribute name="NAME" x="62.484" y="57.785" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="XTAL-08297" x="62.484" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="62.484" y="61.595" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
@@ -2082,12 +2074,9 @@ design rules under a new name.</description>
 <element name="R201" library="adafruit" package="M0805" value="270" x="20.32" y="60.198" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="62.484" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="DS202" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="20.828" y="43.434" smashed="yes" rot="R180">
-<attribute name="NAME" x="22.098" y="44.704" size="1.27" layer="25" rot="R270"/>
-</element>
-<element name="R202" library="adafruit" package="M0805" value="270" x="5.334" y="42.418" smashed="yes">
-<attribute name="NAME" x="4.318" y="43.434" size="1.27" layer="25"/>
-<attribute name="VALUE" x="4.318" y="40.132" size="1.27" layer="27"/>
+<element name="DS202" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="25.4" y="44.45" smashed="yes" rot="R90"/>
+<element name="R202" library="adafruit" package="M0805" value="270" x="21.082" y="44.196" smashed="yes">
+<attribute name="NAME" x="19.05" y="45.212" size="1.27" layer="25"/>
 </element>
 <element name="DS401" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="47.244" y="46.736" smashed="yes"/>
 <element name="R406" library="adafruit" package="M0805" value="270" x="47.244" y="51.054" smashed="yes" rot="R270">
@@ -2175,8 +2164,7 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="72.771" y1="50.193" x2="76.802" y2="53.37" width="0" layer="19" extent="1-1"/>
 <wire x1="29.9974" y1="51.67" x2="29.9974" y2="53.27" width="0" layer="19" extent="1-1"/>
-<wire x1="4.384" y1="42.418" x2="15.966" y2="48.933" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.51" y1="52.578" x2="4.384" y2="42.418" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.51" y1="52.578" x2="12.7" y2="58.928" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_RESET">
 <contactref element="R101" pad="1"/>
@@ -2189,8 +2177,8 @@ design rules under a new name.</description>
 <contactref element="R404" pad="2"/>
 <wire x1="33.89" y1="56.3626" x2="55.864" y2="58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="63.5" x2="33.89" y2="56.3626" width="0" layer="19" extent="1-1"/>
-<wire x1="32.7" y1="72.136" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="21.606" y1="72.898" x2="32.7" y2="72.136" width="0" layer="19" extent="1-1"/>
+<wire x1="36.51" y1="71.12" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="21.606" y1="72.898" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="15.24" y1="58.928" x2="29.21" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="11.466" y1="48.933" x2="15.24" y2="58.928" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="40.64" x2="33.89" y2="56.3626" width="0" layer="19" extent="1-1"/>
@@ -2323,7 +2311,9 @@ design rules under a new name.</description>
 <signal name="MCU_D12">
 <contactref element="U101" pad="16"/>
 <contactref element="J201" pad="15"/>
+<contactref element="J203" pad="1"/>
 <wire x1="37.09" y1="47.7774" x2="59.69" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="53.848" x2="37.09" y2="47.7774" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_D13">
 <contactref element="U101" pad="17"/>
@@ -2331,8 +2321,8 @@ design rules under a new name.</description>
 <contactref element="J203" pad="3"/>
 <contactref element="DS202" pad="A"/>
 <wire x1="38.5826" y1="49.27" x2="59.69" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="20.828" y1="44.484" x2="38.5826" y2="49.27" width="0" layer="19" extent="1-1"/>
-<wire x1="15.24" y1="56.388" x2="20.828" y2="44.484" width="0" layer="19" extent="1-1"/>
+<wire x1="26.45" y1="44.45" x2="38.5826" y2="49.27" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="56.388" x2="26.45" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_RX">
 <contactref element="R102" pad="1"/>
@@ -2422,9 +2412,6 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="72.771" y1="44.803" x2="-18.05" y2="44.196" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="MCU_D14">
-<contactref element="J203" pad="1"/>
-</signal>
 <signal name="PP3V3_CH340G">
 <contactref element="U301" pad="4"/>
 <contactref element="C302" pad="1"/>
@@ -2496,15 +2483,16 @@ design rules under a new name.</description>
 <signal name="CH340G_DTR">
 <contactref element="U301" pad="13"/>
 <contactref element="C305" pad="1"/>
-<wire x1="30.8" y1="72.136" x2="68.961" y2="44.803" width="0" layer="19" extent="1-1"/>
+<wire x1="34.61" y1="71.12" x2="68.961" y2="44.803" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CH340G_CTS">
 <contactref element="U301" pad="9"/>
 <contactref element="R405" pad="1"/>
 <contactref element="R401" pad="2"/>
 <wire x1="55.864" y1="48.26" x2="55.864" y2="45.72" width="0.254" layer="1"/>
-<wire x1="55.864" y1="45.72" x2="56.781" y2="44.803" width="0.254" layer="1"/>
-<wire x1="56.781" y1="44.803" x2="63.881" y2="44.803" width="0.254" layer="1"/>
+<wire x1="55.864" y1="45.72" x2="56.019" y2="45.565" width="0.254" layer="1"/>
+<wire x1="56.019" y1="45.565" x2="63.119" y2="45.565" width="0.254" layer="1"/>
+<wire x1="63.119" y1="45.565" x2="63.881" y2="44.803" width="0.254" layer="1"/>
 </signal>
 <signal name="CH340G_DSR">
 <contactref element="U301" pad="10"/>
@@ -2580,7 +2568,8 @@ design rules under a new name.</description>
 <signal name="LED_DS202" class="1">
 <contactref element="R202" pad="2"/>
 <contactref element="DS202" pad="C"/>
-<wire x1="6.284" y1="42.418" x2="20.828" y2="42.384" width="0" layer="19" extent="1-1"/>
+<wire x1="22.286" y1="44.45" x2="24.35" y2="44.45" width="0.508" layer="1"/>
+<wire x1="22.032" y1="44.196" x2="22.286" y2="44.45" width="0.508" layer="1"/>
 </signal>
 <signal name="LED_DS401" class="1">
 <contactref element="R406" pad="2"/>

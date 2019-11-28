@@ -10318,6 +10318,11 @@ shorts if necessary</text>
 <wire x1="111.76" y1="160.02" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
 <label x="78.74" y="160.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J203" gate="1" pin="1"/>
+<wire x1="264.16" y1="185.42" x2="241.3" y2="185.42" width="0.1524" layer="91"/>
+<label x="241.3" y="185.42" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PP5V0_USB" class="0">
 <segment>
@@ -10491,13 +10496,6 @@ shorts if necessary</text>
 <pinref part="GND22" gate="1" pin="GND"/>
 <pinref part="R202" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="48.26" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MCU_D14" class="0">
-<segment>
-<pinref part="J203" gate="1" pin="1"/>
-<wire x1="264.16" y1="185.42" x2="241.3" y2="185.42" width="0.1524" layer="91"/>
-<label x="241.3" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_DS201" class="1">
