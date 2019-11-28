@@ -10326,21 +10326,10 @@ shorts if necessary</text>
 </net>
 <net name="PP5V0_USB" class="0">
 <segment>
-<wire x1="170.18" y1="195.58" x2="139.7" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="J202" gate="A" pin="1"/>
-<wire x1="172.72" y1="195.58" x2="170.18" y2="195.58" width="0.1524" layer="91"/>
-<label x="139.7" y="195.58" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="170.18" y1="162.56" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="J202" gate="A" pin="14"/>
 <wire x1="172.72" y1="162.56" x2="170.18" y2="162.56" width="0.1524" layer="91"/>
 <label x="139.7" y="162.56" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J202" gate="A" pin="4"/>
-<wire x1="172.72" y1="187.96" x2="139.7" y2="187.96" width="0.1524" layer="91"/>
-<label x="139.7" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCU_A7" class="0">
@@ -10509,6 +10498,16 @@ shorts if necessary</text>
 <pinref part="J203" gate="1" pin="2"/>
 <wire x1="279.4" y1="185.42" x2="302.26" y2="185.42" width="0.1524" layer="91"/>
 <label x="289.56" y="185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J202" gate="A" pin="1"/>
+<wire x1="172.72" y1="195.58" x2="139.7" y2="195.58" width="0.1524" layer="91"/>
+<label x="139.7" y="195.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J202" gate="A" pin="4"/>
+<wire x1="172.72" y1="187.96" x2="139.7" y2="187.96" width="0.1524" layer="91"/>
+<label x="139.7" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_DS202" class="1">
