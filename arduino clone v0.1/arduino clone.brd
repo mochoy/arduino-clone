@@ -166,6 +166,9 @@
 <wire x1="81.514" y1="64.02745625" x2="80.41565625" y2="65.27950625" width="0" layer="20" curve="90"/>
 <wire x1="80.41565625" y1="65.27950625" x2="14.223353125" y2="65.276790625" width="0" layer="20"/>
 <wire x1="14.223353125" y1="65.276790625" x2="12.954" y2="64.008846875" width="0" layer="20" curve="90"/>
+<text x="64.77" y="63.5" size="1.27" layer="21">Arduino Clone v0.1</text>
+<text x="74.422" y="62.484" size="0.8128" layer="21">Monty Choy</text>
+<text x="74.422" y="61.468" size="0.8128" layer="21">Nov 2019</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
