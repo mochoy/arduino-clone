@@ -2185,6 +2185,7 @@ design rules under a new name.</description>
 <via x="30.48" y="59.944" extent="1-16" drill="0.35"/>
 <via x="25.146" y="51.308" extent="1-16" drill="0.35"/>
 <via x="31.496" y="53.594" extent="1-16" drill="0.35"/>
+<wire x1="45.974" y1="43.704" x2="50.546" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="38.5826" y1="52.47" x2="40.894" y2="48.326" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_RESET">
@@ -2642,10 +2643,10 @@ design rules under a new name.</description>
 <vertex x="73.406" y="51.054"/>
 <vertex x="73.406" y="47.498"/>
 </polygon>
-<wire x1="43.434" y1="48.276" x2="43.434" y2="46.482" width="0.762" layer="1"/>
 <via x="43.434" y="46.482" extent="1-16" drill="0.35"/>
-<wire x1="43.434" y1="46.482" x2="47.752" y2="50.8" width="1.27" layer="16"/>
-<wire x1="47.752" y1="50.8" x2="50.546" y2="50.8" width="1.27" layer="16"/>
+<wire x1="43.688" y1="46.482" x2="44.45" y2="47.244" width="1.27" layer="16"/>
+<wire x1="44.45" y1="47.244" x2="48.006" y2="50.8" width="1.27" layer="16"/>
+<wire x1="48.006" y1="50.8" x2="50.546" y2="50.8" width="1.27" layer="16"/>
 <wire x1="74.676" y1="48.498" x2="72.628" y2="48.498" width="1.27" layer="1"/>
 <wire x1="72.628" y1="48.498" x2="72.39" y2="48.26" width="1.27" layer="1"/>
 <via x="72.39" y="48.26" extent="1-16" drill="0.35"/>
@@ -2662,6 +2663,14 @@ design rules under a new name.</description>
 <wire x1="76.496" y1="49.83614375" x2="76.496" y2="50.50385625" width="0.254" layer="1"/>
 <wire x1="78.108" y1="59.036" x2="78.108" y2="49.83614375" width="0.254" layer="1"/>
 <wire x1="76.692" y1="60.452" x2="78.108" y2="59.036" width="0.254" layer="1"/>
+<via x="44.45" y="47.244" extent="1-16" drill="0.35"/>
+<wire x1="43.434" y1="46.482" x2="43.688" y2="46.482" width="1.27" layer="16"/>
+<polygon width="0.0762" layer="1">
+<vertex x="42.418" y="49.022"/>
+<vertex x="42.418" y="45.974"/>
+<vertex x="44.958" y="45.974"/>
+<vertex x="44.958" y="49.022"/>
+</polygon>
 </signal>
 <signal name="PP5V0_CH340G">
 <contactref element="R105" pad="1"/>
