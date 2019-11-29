@@ -2084,8 +2084,8 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="XTAL-08297" x="62.484" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="DS201" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="23.114" y="55.626" smashed="yes"/>
-<element name="R201" library="adafruit" package="M0805" value="270" x="23.114" y="59.944" smashed="yes" rot="R270">
-<attribute name="NAME" x="22.098" y="57.912" size="1.27" layer="25" rot="R90"/>
+<element name="R201" library="adafruit" package="M0805" value="270" x="22.098" y="58.674" smashed="yes">
+<attribute name="NAME" x="20.066" y="59.69" size="1.27" layer="25"/>
 </element>
 <element name="DS202" library="adafruit" package="CHIPLED_0805" value="LTST-C171GKT" x="26.67" y="44.45" smashed="yes" rot="R90"/>
 <element name="R202" library="adafruit" package="M0805" value="270" x="21.59" y="44.196" smashed="yes">
@@ -2167,15 +2167,10 @@ design rules under a new name.</description>
 <wire x1="40.386" y1="56.388" x2="41.656" y2="56.388" width="0.508" layer="16"/>
 <contactref element="J202" pad="1"/>
 <contactref element="J202" pad="4"/>
-<wire x1="31.75" y1="63.5" x2="29.718" y2="61.468" width="0.762" layer="1"/>
-<wire x1="29.718" y1="61.468" x2="26.162" y2="61.468" width="0.762" layer="1"/>
-<wire x1="26.162" y1="61.468" x2="24.13" y2="63.5" width="0.762" layer="1"/>
-<wire x1="24.13" y1="63.5" x2="21.844" y2="63.5" width="0.762" layer="1"/>
-<wire x1="21.844" y1="63.5" x2="21.336" y2="62.992" width="0.762" layer="1"/>
-<wire x1="21.336" y1="62.992" x2="21.336" y2="56.354" width="0.762" layer="1"/>
-<wire x1="21.336" y1="56.354" x2="23.08" y2="54.61" width="0.762" layer="1"/>
 <wire x1="15.494" y1="45.72" x2="14.224" y2="44.45" width="0.254" layer="16"/>
 <wire x1="15.494" y1="53.594" x2="15.494" y2="45.72" width="0.254" layer="16"/>
+<wire x1="36.306" y1="59.69" x2="31.75" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="63.5" x2="31.75" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="U101" pad="5"/>
@@ -2253,10 +2248,10 @@ design rules under a new name.</description>
 <wire x1="35.4584" y1="61.49203125" x2="34.306" y2="60.33963125" width="0.254" layer="1"/>
 <wire x1="36.068" y1="64.77" x2="35.4584" y2="64.1604" width="0.254" layer="1"/>
 <wire x1="53.34" y1="64.262" x2="53.34" y2="60.944" width="0.254" layer="1"/>
-<wire x1="16.764" y1="63.246" x2="18.288" y2="64.77" width="0.254" layer="1"/>
-<wire x1="27.94" y1="64.77" x2="18.288" y2="64.77" width="0.254" layer="1"/>
-<wire x1="16.764" y1="56.695" x2="16.764" y2="63.246" width="0.254" layer="1"/>
-<wire x1="19.014" y1="54.445" x2="16.764" y2="56.695" width="0.254" layer="1"/>
+<wire x1="13.462" y1="63.5" x2="14.732" y2="64.77" width="0.254" layer="1"/>
+<wire x1="27.94" y1="64.77" x2="14.732" y2="64.77" width="0.254" layer="1"/>
+<wire x1="13.462" y1="59.997" x2="13.462" y2="63.5" width="0.254" layer="1"/>
+<wire x1="19.014" y1="54.445" x2="13.462" y2="59.997" width="0.254" layer="1"/>
 <wire x1="29.21" y1="63.5" x2="30.48" y2="64.77" width="0.254" layer="1"/>
 <wire x1="30.48" y1="64.77" x2="36.068" y2="64.77" width="0.254" layer="1"/>
 <wire x1="29.21" y1="63.5" x2="27.94" y2="64.77" width="0.254" layer="1"/>
@@ -2882,7 +2877,8 @@ design rules under a new name.</description>
 <signal name="LED_DS201" class="1">
 <contactref element="R201" pad="2"/>
 <contactref element="DS201" pad="C"/>
-<wire x1="23.114" y1="58.994" x2="23.114" y2="56.676" width="0.508" layer="1"/>
+<wire x1="23.048" y1="58.674" x2="23.114" y2="58.608" width="0.508" layer="1"/>
+<wire x1="23.114" y1="58.608" x2="23.114" y2="56.676" width="0.508" layer="1"/>
 </signal>
 <signal name="LED_DS202" class="1">
 <contactref element="R202" pad="2"/>
