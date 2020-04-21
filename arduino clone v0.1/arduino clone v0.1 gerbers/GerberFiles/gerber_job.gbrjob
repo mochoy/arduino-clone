@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-04-21T15:52:58Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "arduino clone"
+        },
+        "Owner": "Monty C <montgomery.okdaily@gmail.com>",
+        "Size": {
+            "X": 68.562225,
+            "Y": 26.163506
+        }
+    }
+}
